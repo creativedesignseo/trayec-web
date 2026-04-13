@@ -1,19 +1,19 @@
 import { useState } from 'react';
-import { Send, CheckCircle } from 'lucide-react';
+import { Send, CheckCircle, Phone, User, MapPin, MessageSquare } from 'lucide-react';
 
 interface LeadFormProps {
   servicio?: string;
   title?: string;
+  variant?: 'light' | 'dark';
 }
 
-export default function LeadForm({ servicio = 'General', title = 'Solicita tu presupuesto gratis' }: LeadFormProps) {
+export default function LeadForm({ servicio = 'General', title = 'Solicita tu presupuesto gratis', variant = 'light' }: LeadFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // TODO: conectar con backend real (PHP o Supabase)
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
@@ -22,72 +22,85 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
 
   if (submitted) {
     return (
-      <div className="rounded-2xl bg-trayec-green-light p-8 text-center">
-        <CheckCircle className="mx-auto h-12 w-12 text-trayec-green" />
-        <h3 className="mt-4 text-lg font-bold text-trayec-green">¡Gracias!</h3>
-        <p className="mt-2 text-sm text-gray-700">
-          Hemos recibido tu solicitud. Te contactaremos en menos de 1 hora.
+      <div className={`rounded-3xl p-8 text-center ${variant === 'dark' ? 'bg-slate-800/80' : 'bg-emerald-50'}`}>
+        <CheckCircle className="mx-auto h-14 w-14 text-emerald-500" />
+        <h3 className={`mt-5 text-lg font-bold ${variant === 'dark' ? 'text-white' : 'text-emerald-700'}`}>¡Gracias por contactarnos!</h3>
+        <p className={`mt-2 text-sm ${variant === 'dark' ? 'text-slate-300' : 'text-slate-600'}`}>
+          Hemos recibido tu solicitud. Un experto te contactará en menos de 1 hora.
         </p>
       </div>
     );
   }
 
   return (
-    <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-100 sm:p-8">
-      <h3 className="text-lg font-bold text-trayec-gray-text">{title}</h3>
-      <p className="mt-1 text-sm text-gray-500">
-        Respuesta en menos de 1 hora. Sin compromiso.
+    <div className={`rounded-3xl p-6 shadow-2xl backdrop-blur-sm sm:p-8 ${variant === 'dark' ? 'bg-slate-900/80 ring-1 ring-white/10' : 'bg-white ring-1 ring-slate-100'}`}>
+      <h3 className={`text-xl font-bold ${variant === 'dark' ? 'text-white' : 'text-slate-900'}`}>{title}</h3>
+      <p className={`mt-1 text-sm ${variant === 'dark' ? 'text-slate-300' : 'text-slate-500'}`}>
+        Respuesta garantizada en menos de 1 hora. Sin compromiso.
       </p>
-      <form onSubmit={handleSubmit} className="mt-5 space-y-4">
+      <form onSubmit={handleSubmit} className="mt-6 space-y-4">
         <input type="hidden" name="servicio" value={servicio} />
-        <div>
-          <label htmlFor="nombre" className="sr-only">Nombre</label>
+        
+        <div className="relative">
+          <User className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`} />
           <input
-            id="nombre"
             name="nombre"
             type="text"
             required
             placeholder="Tu nombre"
-            className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-trayec-green focus:ring-1 focus:ring-trayec-green"
+            className={`w-full rounded-full border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
+              variant === 'dark'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-emerald-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-emerald-500'
+            }`}
           />
         </div>
-        <div>
-          <label htmlFor="telefono" className="sr-only">Teléfono</label>
+
+        <div className="relative">
+          <Phone className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`} />
           <input
-            id="telefono"
             name="telefono"
             type="tel"
             required
             placeholder="Teléfono"
-            className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-trayec-green focus:ring-1 focus:ring-trayec-green"
+            className={`w-full rounded-full border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
+              variant === 'dark'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-emerald-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-emerald-500'
+            }`}
           />
         </div>
-        <div>
-          <label htmlFor="ciudad" className="sr-only">Ciudad / Población</label>
+
+        <div className="relative">
+          <MapPin className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`} />
           <input
-            id="ciudad"
             name="ciudad"
             type="text"
             required
             placeholder="Ciudad o población"
-            className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-trayec-green focus:ring-1 focus:ring-trayec-green"
+            className={`w-full rounded-full border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
+              variant === 'dark'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-emerald-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-emerald-500'
+            }`}
           />
         </div>
-        <div>
-          <label htmlFor="mensaje" className="sr-only">Mensaje</label>
+
+        <div className="relative">
+          <MessageSquare className={`absolute left-4 top-4 h-4 w-4 ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`} />
           <textarea
-            id="mensaje"
             name="mensaje"
             rows={3}
             placeholder="¿Qué necesitas?"
-            className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-trayec-green focus:ring-1 focus:ring-trayec-green"
+            className={`w-full rounded-2xl border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
+              variant === 'dark'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-emerald-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-emerald-500'
+            }`}
           />
         </div>
-        <button
-          type="submit"
-          disabled={loading}
-          className="btn-cta w-full"
-        >
+
+        <button type="submit" disabled={loading} className="btn-primary w-full">
           {loading ? 'Enviando...' : (
             <>
               <Send className="mr-2 h-4 w-4" />
@@ -95,7 +108,7 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
             </>
           )}
         </button>
-        <p className="text-center text-xs text-gray-400">
+        <p className={`text-center text-xs ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`}>
           Al enviar, aceptas nuestra política de privacidad.
         </p>
       </form>
