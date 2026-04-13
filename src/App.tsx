@@ -3,6 +3,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contacto from './pages/Contacto';
+import VaciadoPisos from './pages/VaciadoPisos';
+import RecogidaMuebles from './pages/RecogidaMuebles';
+import Reformas from './pages/Reformas';
+import Limpieza from './pages/Limpieza';
+import Pintura from './pages/Pintura';
+import SobreNosotros from './pages/SobreNosotros';
+import Legal from './pages/Legal';
 
 function App() {
   return (
@@ -12,14 +19,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contacto" element={<Contacto />} />
-          {/* Placeholder routes for SEO landings */}
-          <Route path="/vaciado-pisos" element={<Home />} />
-          <Route path="/recogida-muebles" element={<Home />} />
-          <Route path="/reformas" element={<Home />} />
-          <Route path="/limpieza-post-obra" element={<Home />} />
-          <Route path="/pintura" element={<Home />} />
-          <Route path="/sobre-nosotros" element={<Home />} />
-          <Route path="/legal" element={<Home />} />
+          <Route path="/vaciado-pisos" element={<VaciadoPisos />} />
+          <Route path="/recogida-muebles" element={<RecogidaMuebles />} />
+          <Route path="/reformas" element={<Reformas />} />
+          <Route path="/limpieza-post-obra" element={<Limpieza />} />
+          <Route path="/pintura" element={<Pintura />} />
+          <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+          <Route path="/legal" element={<Legal />} />
         </Routes>
       </main>
       <Footer />

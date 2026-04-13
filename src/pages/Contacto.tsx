@@ -23,13 +23,13 @@ export default function Contacto() {
               <h2 className="text-xl font-bold text-slate-900">Datos de contacto</h2>
               <dl className="mt-6 space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-green-100 text-green-600">
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
                     <dt className="text-sm font-semibold text-slate-500">Teléfono</dt>
                     <dd className="mt-1">
-                      <a href="tel:694266258" className="text-xl font-bold text-slate-900 hover:text-emerald-600">
+                      <a href="tel:694266258" className="text-xl font-bold text-slate-900 hover:text-green-600">
                         694 266 258
                       </a>
                     </dd>
@@ -38,13 +38,13 @@ export default function Contacto() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-green-100 text-green-600">
                     <Mail className="h-6 w-6" />
                   </div>
                   <div>
                     <dt className="text-sm font-semibold text-slate-500">Email</dt>
                     <dd className="mt-1">
-                      <a href="mailto:trayec2024sl@gmail.com" className="text-lg font-semibold text-slate-900 hover:text-emerald-600">
+                      <a href="mailto:trayec2024sl@gmail.com" className="text-lg font-semibold text-slate-900 hover:text-green-600">
                         trayec2024sl@gmail.com
                       </a>
                     </dd>
@@ -52,7 +52,7 @@ export default function Contacto() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-green-100 text-green-600">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
@@ -65,7 +65,7 @@ export default function Contacto() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-green-100 text-green-600">
                     <Clock className="h-6 w-6" />
                   </div>
                   <div>

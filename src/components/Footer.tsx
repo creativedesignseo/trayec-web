@@ -22,12 +22,9 @@ export default function Footer() {
     <footer className="bg-slate-900 text-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
-          {/* Brand + Form */}
           <div className="lg:col-span-5">
             <Link to="/" className="inline-block">
-              <span className="text-3xl font-black tracking-tight text-white">
-                TRAYEC
-              </span>
+              <span className="text-3xl font-black tracking-tight text-white">TRAYEC</span>
             </Link>
             <p className="mt-4 max-w-sm text-slate-400">
               Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en toda Cataluña.
@@ -39,7 +36,7 @@ export default function Footer() {
                 <input
                   type="tel"
                   placeholder="Tu teléfono"
-                  className="flex-1 rounded-full border-0 bg-slate-800 px-4 py-3 text-sm text-white placeholder-slate-400 outline-none ring-1 ring-slate-700 focus:ring-2 focus:ring-emerald-500"
+                  className="flex-1 rounded-full border-0 bg-slate-800 px-4 py-3 text-sm text-white placeholder-slate-400 outline-none ring-1 ring-slate-700 focus:ring-2 focus:ring-green-500"
                 />
                 <button type="submit" className="btn-primary whitespace-nowrap">
                   <span className="hidden sm:inline">Enviar</span>
@@ -49,14 +46,13 @@ export default function Footer() {
             </form>
           </div>
 
-          {/* Links */}
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7 lg:justify-items-end">
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-white">Servicios</h3>
               <ul className="mt-4 space-y-3">
                 {footerLinks.servicios.map((item) => (
                   <li key={item.name}>
-                    <Link to={item.href} className="text-sm text-slate-400 hover:text-emerald-400 transition">
+                    <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
                       {item.name}
                     </Link>
                   </li>
@@ -69,7 +65,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 {footerLinks.empresa.map((item) => (
                   <li key={item.name}>
-                    <Link to={item.href} className="text-sm text-slate-400 hover:text-emerald-400 transition">
+                    <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
                       {item.name}
                     </Link>
                   </li>
@@ -81,19 +77,19 @@ export default function Footer() {
               <h3 className="text-sm font-bold uppercase tracking-wider text-white">Contacto</h3>
               <ul className="mt-4 space-y-3">
                 <li className="flex items-start gap-2 text-sm text-slate-400">
-                  <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-500" />
-                  <a href="tel:694266258" className="hover:text-emerald-400">694 266 258</a>
+                  <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
+                  <a href="tel:694266258" className="hover:text-green-400">694 266 258</a>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-400">
-                  <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-500" />
-                  <a href="mailto:trayec2024sl@gmail.com" className="hover:text-emerald-400">trayec2024sl@gmail.com</a>
+                  <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
+                  <a href="mailto:trayec2024sl@gmail.com" className="hover:text-green-400">trayec2024sl@gmail.com</a>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-400">
-                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-500" />
+                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
                   Calle Saragossa 53, 3-1<br />Barcelona
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-400">
-                  <Clock className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-500" />
+                  <Clock className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
                   Disponible 24h
                 </li>
               </ul>
@@ -109,7 +105,7 @@ export default function Footer() {
             <a href="https://wa.me/34694266258" target="_blank" rel="noreferrer" className="rounded-full bg-[#25D366] px-4 py-2 text-xs font-semibold text-white hover:opacity-90 transition">
               WhatsApp
             </a>
-            <a href="tel:694266258" className="rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-500 transition">
+            <a href="tel:694266258" className="rounded-full bg-green-600 px-4 py-2 text-xs font-semibold text-white hover:bg-green-500 transition">
               Llamar
             </a>
           </div>

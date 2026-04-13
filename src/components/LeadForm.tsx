@@ -22,9 +22,9 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
 
   if (submitted) {
     return (
-      <div className={`rounded-3xl p-8 text-center ${variant === 'dark' ? 'bg-slate-800/80' : 'bg-emerald-50'}`}>
-        <CheckCircle className="mx-auto h-14 w-14 text-emerald-500" />
-        <h3 className={`mt-5 text-lg font-bold ${variant === 'dark' ? 'text-white' : 'text-emerald-700'}`}>¡Gracias por contactarnos!</h3>
+      <div className={`rounded-3xl p-8 text-center ${variant === 'dark' ? 'bg-slate-800/80' : 'bg-green-50'}`}>
+        <CheckCircle className="mx-auto h-14 w-14 text-green-500" />
+        <h3 className={`mt-5 text-lg font-bold ${variant === 'dark' ? 'text-white' : 'text-green-700'}`}>¡Gracias por contactarnos!</h3>
         <p className={`mt-2 text-sm ${variant === 'dark' ? 'text-slate-300' : 'text-slate-600'}`}>
           Hemos recibido tu solicitud. Un experto te contactará en menos de 1 hora.
         </p>
@@ -42,7 +42,7 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
         <input type="hidden" name="servicio" value={servicio} />
         
         <div className="relative">
-          <User className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`} />
+          <User className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400`} />
           <input
             name="nombre"
             type="text"
@@ -50,14 +50,14 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
             placeholder="Tu nombre"
             className={`w-full rounded-full border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
               variant === 'dark'
-                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-emerald-500'
-                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-emerald-500'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-green-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-green-500'
             }`}
           />
         </div>
 
         <div className="relative">
-          <Phone className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`} />
+          <Phone className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400`} />
           <input
             name="telefono"
             type="tel"
@@ -65,14 +65,14 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
             placeholder="Teléfono"
             className={`w-full rounded-full border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
               variant === 'dark'
-                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-emerald-500'
-                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-emerald-500'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-green-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-green-500'
             }`}
           />
         </div>
 
         <div className="relative">
-          <MapPin className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`} />
+          <MapPin className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400`} />
           <input
             name="ciudad"
             type="text"
@@ -80,22 +80,22 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
             placeholder="Ciudad o población"
             className={`w-full rounded-full border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
               variant === 'dark'
-                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-emerald-500'
-                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-emerald-500'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-green-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-green-500'
             }`}
           />
         </div>
 
         <div className="relative">
-          <MessageSquare className={`absolute left-4 top-4 h-4 w-4 ${variant === 'dark' ? 'text-slate-400' : 'text-slate-400'}`} />
+          <MessageSquare className={`absolute left-4 top-4 h-4 w-4 text-slate-400`} />
           <textarea
             name="mensaje"
             rows={3}
             placeholder="¿Qué necesitas?"
             className={`w-full rounded-2xl border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
               variant === 'dark'
-                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-emerald-500'
-                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-emerald-500'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-green-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-green-500'
             }`}
           />
         </div>

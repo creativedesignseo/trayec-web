@@ -96,15 +96,15 @@ export default function Home() {
         <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid w-full gap-12 lg:grid-cols-2 lg:items-center">
             <div className="text-white">
-              <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-1.5 text-sm font-medium text-emerald-400 ring-1 ring-inset ring-emerald-500/20">
+              <div className="inline-flex items-center gap-2 rounded-full bg-green-500/10 px-4 py-1.5 text-sm font-medium text-green-400 ring-1 ring-inset ring-green-500/20">
                 <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
                 </span>
                 Disponible 24h en toda Cataluña
               </div>
               <h1 className="mt-6 text-5xl font-black tracking-tight sm:text-6xl lg:text-7xl">
-                Vaciado de pisos <span className="text-emerald-400">sin estrés</span>
+                Vaciado de pisos <span className="text-green-400">sin estrés</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
                 Servicio rápido, limpio y profesional. Presupuesto sin coste y respuesta en menos de 1 hora. Trayec 2024 S.L, tu empresa de confianza en Barcelona y toda Cataluña.
@@ -160,7 +160,7 @@ export default function Home() {
               alt="Equipo Trayec"
               className="rounded-3xl shadow-2xl"
             />
-            <div className="absolute -bottom-6 -right-6 rounded-2xl bg-emerald-600 p-6 text-white shadow-xl sm:-right-10">
+            <div className="absolute -bottom-6 -right-6 rounded-2xl bg-green-600 p-6 text-white shadow-xl sm:-right-10">
               <p className="text-4xl font-black">24h</p>
               <p className="text-sm font-medium opacity-90">Disponibles</p>
             </div>
@@ -175,7 +175,7 @@ export default function Home() {
             <ul className="mt-6 space-y-3">
               {['Presupuesto sin coste', 'Respuesta en menos de 1 hora', 'Reciclaje responsable', 'Cobertura total Cataluña'].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-slate-700">
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 text-green-600">
                     <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                   </span>
                   {item}
@@ -186,7 +186,7 @@ export default function Home() {
               <a href="/sobre-nosotros" className="btn-primary">
                 Conócenos
               </a>
-              <a href="tel:694266258" className="inline-flex items-center gap-2 font-semibold text-emerald-600 hover:text-emerald-700">
+              <a href="tel:694266258" className="inline-flex items-center gap-2 font-semibold text-green-600 hover:text-green-700">
                 <Phone className="h-5 w-5" />
                 Llámanos
               </a>
@@ -218,14 +218,14 @@ export default function Home() {
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-4 left-4 inline-flex rounded-full bg-emerald-500 p-2.5 text-white shadow-lg">
+                  <div className="absolute bottom-4 left-4 inline-flex rounded-full bg-green-500 p-2.5 text-white shadow-lg">
                     <s.icon className="h-5 w-5" />
                   </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-slate-900">{s.name}</h3>
                   <p className="mt-2 text-sm text-slate-600">{s.description}</p>
-                  <span className="mt-4 inline-flex items-center text-sm font-semibold text-emerald-600">
+                  <span className="mt-4 inline-flex items-center text-sm font-semibold text-green-600">
                     Saber más <ArrowRight className="ml-1 h-4 w-4 transition group-hover:translate-x-1" />
                   </span>
                 </div>
@@ -247,7 +247,7 @@ export default function Home() {
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {pasos.map((p, i) => (
               <div key={p.step} className="relative rounded-2xl bg-slate-800/50 p-8 ring-1 ring-white/10">
-                <span className="text-5xl font-black text-emerald-500/20">{p.step}</span>
+                <span className="text-5xl font-black text-green-500/20">{p.step}</span>
                 <h3 className="mt-4 text-xl font-bold">{p.title}</h3>
                 <p className="mt-2 text-slate-300">{p.description}</p>
                 {i < 2 && (
@@ -276,7 +276,7 @@ export default function Home() {
                 { icon: MapPin, title: 'Toda Cataluña', desc: 'Desde Barcelona capital hasta el pueblo más pequeño de Girona o Lleida.' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-green-100 text-green-600">
                     <item.icon className="h-6 w-6" />
                   </div>
                   <div>
@@ -298,7 +298,7 @@ export default function Home() {
       </div>
 
       {/* Testimonios */}
-      <div className="bg-emerald-50 py-20">
+      <div className="bg-green-50 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="section-title">Lo que dicen nuestros clientes</h2>
@@ -310,7 +310,7 @@ export default function Home() {
               { name: 'Ana P.', text: 'Recogieron los muebles de mi oficina sin coste porque estaban en buen estado. Muy sostenible.', stars: 5 },
             ].map((t, i) => (
               <div key={i} className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-100">
-                <div className="flex gap-1 text-amber-400">
+                <div className="flex gap-1 text-green-500">
                   {Array.from({ length: t.stars }).map((_, j) => (
                     <Star key={j} className="h-4 w-4 fill-current" />
                   ))}
