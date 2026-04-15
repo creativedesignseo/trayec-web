@@ -1,5 +1,8 @@
+import { Helmet } from 'react-helmet-async';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
 import { Truck, Paintbrush, Home as HomeIcon, Sparkles, Clock, Shield, MapPin, Phone, ChevronDown, Star, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import LeadForm from '../components/LeadForm';
 
 const servicios = [
@@ -82,18 +85,25 @@ export default function Home() {
 
   return (
     <div className="bg-white">
+      <LocalBusinessSchema />
+      <Helmet>
+        <title>El Recolector | Vaciado de Pisos y Recogida de Muebles en Cataluña</title>
+        <meta name="description" content="Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en Barcelona y toda Cataluña. Presupuesto gratis y respuesta en menos de 1h." />
+        <link rel="canonical" href="https://trayec-web.netlify.app/" />
+      </Helmet>
+
       {/* Hero */}
-      <div className="relative min-h-screen">
+      <div className="relative min-h-[65vh] sm:min-h-[80vh]">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80"
-            alt="Camión de mudanzas"
+            alt="Camión de mudanzas El Recolector en Barcelona"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />
         </div>
 
-        <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 py-24 sm:px-6 lg:px-8">
+        <div className="relative mx-auto flex min-h-[65vh] sm:min-h-[80vh] max-w-7xl items-center px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid w-full gap-12 lg:grid-cols-2 lg:items-center">
             <div className="text-white">
               <div className="inline-flex items-center gap-2 rounded-full bg-green-500/10 px-4 py-1.5 text-sm font-medium text-green-400 ring-1 ring-inset ring-green-500/20">
@@ -103,11 +113,11 @@ export default function Home() {
                 </span>
                 Disponible 24h en toda Cataluña
               </div>
-              <h1 className="mt-6 text-5xl font-black tracking-tight sm:text-6xl lg:text-7xl">
+              <h1 className="mt-6 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
                 Vaciado de pisos <span className="text-green-400">sin estrés</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
-                Servicio rápido, limpio y profesional. Presupuesto sin coste y respuesta en menos de 1 hora. Trayec 2024 S.L, tu empresa de confianza en Barcelona y toda Cataluña.
+                Servicio rápido, limpio y profesional. Presupuesto sin coste y respuesta en menos de 1 hora. El Recolector, tu empresa de confianza en Barcelona y toda Cataluña.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a href="tel:694266258" className="btn-cta inline-flex items-center justify-center gap-2">
@@ -154,13 +164,14 @@ export default function Home() {
       {/* About */}
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div className="relative">
+          <div className="relative overflow-hidden pb-8 pr-8">
             <img
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
-              alt="Equipo Trayec"
+              alt="Equipo El Recolector trabajando"
+              loading="lazy"
               className="rounded-3xl shadow-2xl"
             />
-            <div className="absolute -bottom-6 -right-6 rounded-2xl bg-green-600 p-6 text-white shadow-xl sm:-right-10">
+            <div className="absolute bottom-4 right-4 rounded-2xl bg-green-600 p-5 text-white shadow-xl sm:bottom-6 sm:right-6 sm:p-6">
               <p className="text-4xl font-black">24h</p>
               <p className="text-sm font-medium opacity-90">Disponibles</p>
             </div>
@@ -170,7 +181,7 @@ export default function Home() {
               Tu equipo de confianza para vaciados y reformas
             </h2>
             <p className="mt-4 text-lg text-slate-600">
-              En Trayec 2024 S.L combinamos rapidez, profesionalidad y respeto por el medio ambiente. Reciclamos todo lo que podemos y garantizamos un servicio limpio de principio a fin.
+              En El Recolector combinamos rapidez, profesionalidad y respeto por el medio ambiente. Reciclamos todo lo que podemos y garantizamos un servicio limpio de principio a fin.
             </p>
             <ul className="mt-6 space-y-3">
               {['Presupuesto sin coste', 'Respuesta en menos de 1 hora', 'Reciclaje responsable', 'Cobertura total Cataluña'].map((item) => (
@@ -183,9 +194,9 @@ export default function Home() {
               ))}
             </ul>
             <div className="mt-8 flex gap-4">
-              <a href="/sobre-nosotros" className="btn-primary">
+              <Link to="/sobre-nosotros" className="btn-primary">
                 Conócenos
-              </a>
+              </Link>
               <a href="tel:694266258" className="inline-flex items-center gap-2 font-semibold text-green-600 hover:text-green-700">
                 <Phone className="h-5 w-5" />
                 Llámanos
@@ -206,15 +217,16 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {servicios.map((s) => (
-              <a
+              <Link
                 key={s.name}
-                href={s.href}
+                to={s.href}
                 className="group card-modern overflow-hidden"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={s.image}
                     alt={s.name}
+                    loading="lazy"
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -229,7 +241,7 @@ export default function Home() {
                     Saber más <ArrowRight className="ml-1 h-4 w-4 transition group-hover:translate-x-1" />
                   </span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -247,7 +259,7 @@ export default function Home() {
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {pasos.map((p, i) => (
               <div key={p.step} className="relative rounded-2xl bg-slate-800/50 p-8 ring-1 ring-white/10">
-                <span className="text-5xl font-black text-green-500/20">{p.step}</span>
+                <span className="text-5xl font-black text-green-400/40">{p.step}</span>
                 <h3 className="mt-4 text-xl font-bold">{p.title}</h3>
                 <p className="mt-2 text-slate-300">{p.description}</p>
                 {i < 2 && (
@@ -265,7 +277,7 @@ export default function Home() {
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <h2 className="section-title">¿Por qué elegir Trayec?</h2>
+            <h2 className="section-title">¿Por qué elegir El Recolector?</h2>
             <p className="mt-4 text-lg text-slate-600">
               Nos diferenciamos por la rapidez, la transparencia y el trato cercano. Tu tiempo y tranquilidad son lo primero.
             </p>
@@ -290,7 +302,8 @@ export default function Home() {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
-              alt="Profesionalidad Trayec"
+              alt="Profesionalidad El Recolector"
+              loading="lazy"
               className="rounded-3xl shadow-2xl"
             />
           </div>

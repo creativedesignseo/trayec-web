@@ -1,17 +1,26 @@
+import { Helmet } from 'react-helmet-async';
 import { Phone, CheckCircle, Paintbrush, Palette, Brush, ArrowRight } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
 
 export default function Pintura() {
   return (
     <div className="bg-white">
-      <div className="relative min-h-[80vh]">
+      <LocalBusinessSchema />
+      <Helmet>
+        <title>Pintores Económicos Barcelona | Interiores y Exteriores | El Recolector</title>
+        <meta name="description" content="Pintores profesionales en Barcelona y toda Cataluña. Pintura de interiores, exteriores, baños y cocinas. Presupuesto gratis y acabados de calidad." />
+        <link rel="canonical" href="https://trayec-web.netlify.app/pintura" />
+      </Helmet>
+
+      <div className="relative min-h-[65vh] sm:min-h-[80vh]">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1920&q=80"
             alt="Pintores profesionales Barcelona"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />
         </div>
         <div className="relative mx-auto flex min-h-[80vh] max-w-7xl items-center px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid w-full gap-12 lg:grid-cols-2 lg:items-center">
@@ -20,7 +29,7 @@ export default function Pintura() {
                 <Paintbrush className="h-4 w-4" />
                 Pintores en Barcelona y Cataluña
               </div>
-              <h1 className="mt-6 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
                 Pintores económicos <span className="text-green-400">Barcelona</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">

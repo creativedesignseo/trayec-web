@@ -1,5 +1,7 @@
+import { Helmet } from 'react-helmet-async';
 import { Phone, MapPin, Clock, Shield, CheckCircle, Truck, Home as HomeIcon } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
 
 const beneficios = [
   'Presupuesto sin coste y sin compromiso',
@@ -18,15 +20,22 @@ const ciudades = [
 export default function VaciadoPisos() {
   return (
     <div className="bg-white">
+      <LocalBusinessSchema />
+      <Helmet>
+        <title>Vaciado de Pisos Barcelona y Cataluña | El Recolector</title>
+        <meta name="description" content="Servicio profesional de vaciado de pisos, locales, naves y trasteros en Barcelona y toda Cataluña. Presupuesto gratis y respuesta en menos de 1 hora." />
+        <link rel="canonical" href="https://trayec-web.netlify.app/vaciado-pisos" />
+      </Helmet>
+
       {/* Hero */}
-      <div className="relative min-h-[80vh]">
+      <div className="relative min-h-[65vh] sm:min-h-[80vh]">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80"
             alt="Vaciado de pisos en Cataluña"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />
         </div>
         <div className="relative mx-auto flex min-h-[80vh] max-w-7xl items-center px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid w-full gap-12 lg:grid-cols-2 lg:items-center">
@@ -38,7 +47,7 @@ export default function VaciadoPisos() {
                 </span>
                 Disponible 24h en toda Cataluña
               </div>
-              <h1 className="mt-6 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
                 Vaciado de pisos <span className="text-green-400">Barcelona y Cataluña</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
@@ -67,7 +76,7 @@ export default function VaciadoPisos() {
           <div>
             <h2 className="section-title">¿Por qué contratar nuestro vaciado de pisos?</h2>
             <p className="mt-4 text-lg text-slate-600">
-              En Trayec 2024 S.L nos encargamos de todo: desde la retirada de muebles hasta la limpieza final. Nos adaptamos a tu horario y gestionamos el reciclaje de todo lo recuperable.
+              En El Recolector nos encargamos de todo: desde la retirada de muebles hasta la limpieza final. Nos adaptamos a tu horario y gestionamos el reciclaje de todo lo recuperable.
             </p>
             <ul className="mt-8 space-y-4">
               {beneficios.map((b) => (
@@ -78,10 +87,11 @@ export default function VaciadoPisos() {
               ))}
             </ul>
           </div>
-          <div className="relative">
+          <div className="relative overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
-              alt="Equipo de vaciado"
+              alt="Equipo de vaciado profesional"
+              loading="lazy"
               className="rounded-3xl shadow-2xl"
             />
             <div className="absolute -bottom-6 -right-6 rounded-2xl bg-green-600 p-6 text-white shadow-xl sm:-right-10">

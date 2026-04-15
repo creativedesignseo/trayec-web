@@ -1,14 +1,22 @@
+import { Helmet } from 'react-helmet-async';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
 
 export default function Contacto() {
   return (
     <div className="bg-white">
-      {/* Hero pequeño */}
+      <LocalBusinessSchema />
+      <Helmet>
+        <title>Contacto | El Recolector | Vaciado de Pisos Barcelona</title>
+        <meta name="description" content="Contacta con El Recolector. Teléfono 694 266 258. Servicio de vaciado de pisos, recogida de muebles y reformas en Barcelona y toda Cataluña. Disponible 24h." />
+        <link rel="canonical" href="https://trayec-web.netlify.app/contacto" />
+      </Helmet>
+
       <div className="relative bg-slate-900 py-20">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10" />
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Contacto</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Contacto</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
             Estamos disponibles las 24 horas. Llámanos o envíanos un mensaje y te respondemos en menos de 1 hora.
           </p>
@@ -17,7 +25,6 @@ export default function Contacto() {
 
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mt-4 grid gap-12 lg:grid-cols-2">
-          {/* Info */}
           <div className="space-y-8">
             <div className="rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-100">
               <h2 className="text-xl font-bold text-slate-900">Datos de contacto</h2>
@@ -94,7 +101,6 @@ export default function Contacto() {
             </div>
           </div>
 
-          {/* Form */}
           <div>
             <LeadForm title="Solicita información o presupuesto" />
           </div>

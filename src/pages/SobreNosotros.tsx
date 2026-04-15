@@ -1,14 +1,23 @@
+import { Helmet } from 'react-helmet-async';
 import { Phone, MapPin, Clock, Shield } from 'lucide-react';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
 
 export default function SobreNosotros() {
   return (
     <div className="bg-white">
+      <LocalBusinessSchema />
+      <Helmet>
+        <title>Sobre Nosotros | El Recolector | Vaciados y Reformas Cataluña</title>
+        <meta name="description" content="Conoce El Recolector. Empresa profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en Barcelona y toda Cataluña." />
+        <link rel="canonical" href="https://trayec-web.netlify.app/sobre-nosotros" />
+      </Helmet>
+
       <div className="relative bg-slate-900 py-20">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10" />
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Sobre Nosotros</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Sobre Nosotros</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
-            Trayec 2024 S.L — Tu empresa de confianza para vaciados, recogidas y reformas en Cataluña.
+            El Recolector — Tu empresa de confianza para vaciados, recogidas y reformas en Cataluña.
           </p>
         </div>
       </div>
@@ -18,7 +27,7 @@ export default function SobreNosotros() {
           <div>
             <h2 className="section-title">Profesionales del vaciado y la reforma</h2>
             <p className="mt-4 text-lg text-slate-600">
-              En Trayec 2024 S.L llevamos más de un año ofreciendo servicios profesionales de vaciado de pisos, recogida de muebles, reformas integrales, limpieza post-obra y pintura en toda Cataluña.
+              En El Recolector llevamos más de un año ofreciendo servicios profesionales de vaciado de pisos, recogida de muebles, reformas integrales, limpieza post-obra y pintura en toda Cataluña.
             </p>
             <p className="mt-4 text-lg text-slate-600">
               Nuestro objetivo es simple: hacer que cada cliente quede satisfecho con un servicio rápido, limpio y transparente. Nos encargamos de todo, desde el primer contacto hasta la limpieza final.

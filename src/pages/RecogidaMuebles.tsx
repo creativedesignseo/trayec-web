@@ -1,5 +1,7 @@
+import { Helmet } from 'react-helmet-async';
 import { Phone, CheckCircle, Truck } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
 
 const beneficios = [
   'Evaluación gratuita del estado de los muebles',
@@ -13,14 +15,21 @@ const beneficios = [
 export default function RecogidaMuebles() {
   return (
     <div className="bg-white">
-      <div className="relative min-h-[80vh]">
+      <LocalBusinessSchema />
+      <Helmet>
+        <title>Recogida de Muebles Gratis Barcelona | El Recolector</title>
+        <meta name="description" content="Recogida de muebles, electrodomésticos y enseres en Barcelona y toda Cataluña. Si están en buen estado, la retirada puede ser gratuita. Presupuesto sin coste." />
+        <link rel="canonical" href="https://trayec-web.netlify.app/recogida-muebles" />
+      </Helmet>
+
+      <div className="relative min-h-[65vh] sm:min-h-[80vh]">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80"
             alt="Recogida de muebles en Cataluña"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />
         </div>
         <div className="relative mx-auto flex min-h-[80vh] max-w-7xl items-center px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid w-full gap-12 lg:grid-cols-2 lg:items-center">
@@ -29,7 +38,7 @@ export default function RecogidaMuebles() {
                 <Truck className="h-4 w-4" />
                 Recogida en Barcelona y Cataluña
               </div>
-              <h1 className="mt-6 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
                 Recogida de muebles <span className="text-green-400">gratis y a domicilio</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
@@ -71,7 +80,8 @@ export default function RecogidaMuebles() {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80"
-              alt="Recogida muebles"
+              alt="Recogida muebles profesional"
+              loading="lazy"
               className="rounded-3xl shadow-2xl"
             />
             <div className="absolute -bottom-6 -right-6 rounded-2xl bg-green-600 p-6 text-white shadow-xl sm:-right-10">

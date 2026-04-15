@@ -1,12 +1,19 @@
+import { Helmet } from 'react-helmet-async';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Legal() {
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Aviso Legal y Política de Privacidad | El Recolector</title>
+        <meta name="description" content="Información legal de El Recolector. Aviso legal, política de privacidad y política de cookies. CIF B56321581. Calle Saragossa 53, Barcelona." />
+        <link rel="canonical" href="https://trayec-web.netlify.app/legal" />
+      </Helmet>
+
       <div className="relative bg-slate-900 py-20">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10" />
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Información Legal</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Información Legal</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
             Aviso legal, política de privacidad y política de cookies.
           </p>
@@ -20,7 +27,7 @@ export default function Legal() {
             En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se informa que el titular de esta web es:
           </p>
           <ul className="mt-4 space-y-2 text-slate-600">
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>Razón social:</strong> Trayec 2024 S.L</li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>Razón social:</strong> El Recolector</li>
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>CIF:</strong> B56321581</li>
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>Dirección:</strong> Calle Saragossa 53, 3-1, Barcelona</li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-green-600" /> <strong>Teléfono:</strong> 694 266 258</li>
@@ -29,7 +36,7 @@ export default function Legal() {
 
           <h2 className="mt-10 text-2xl font-bold text-slate-900">Política de Privacidad</h2>
           <p className="mt-4 text-slate-600">
-            Trayec 2024 S.L se compromete a proteger la información personal de los usuarios. Los datos recogidos a través del formulario de contacto serán utilizados exclusivamente para gestionar su solicitud y nunca serán cedidos a terceros sin su consentimiento.
+            El Recolector se compromete a proteger la información personal de los usuarios. Los datos recogidos a través del formulario de contacto serán utilizados exclusivamente para gestionar su solicitud y nunca serán cedidos a terceros sin su consentimiento.
           </p>
           <p className="mt-4 text-slate-600">
             Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición contactando con nosotros a través del email trayec2024sl@gmail.com.

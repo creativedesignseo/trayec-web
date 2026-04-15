@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Link to="/" className="inline-block">
-              <span className="text-3xl font-black tracking-tight text-white">TRAYEC</span>
+              <img src="/logo.svg" alt="El Recolector" className="h-10 w-auto" />
             </Link>
             <p className="mt-4 max-w-sm text-slate-400">
               Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en toda Cataluña.
@@ -99,7 +99,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 sm:flex-row">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} Trayec 2024 S.L — B56321581. Todos los derechos reservados.
+            © {new Date().getFullYear()} El Recolector — B56321581. Todos los derechos reservados.
           </p>
           <div className="flex gap-4">
             <a href="https://wa.me/34694266258" target="_blank" rel="noreferrer" className="rounded-full bg-[#25D366] px-4 py-2 text-xs font-semibold text-white hover:opacity-90 transition">
