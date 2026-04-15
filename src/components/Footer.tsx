@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Link to="/" className="inline-block">
-              <img src="/logo.svg" alt="El Recolector" className="h-10 w-auto" />
+              <img src="/logo.svg" alt="El Recolector" className="h-14 w-auto" />
             </Link>
             <p className="mt-4 max-w-sm text-slate-400">
               Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en toda Cataluña.
@@ -82,7 +82,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-400">
                   <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
-                  <a href="mailto:trayec2024sl@gmail.com" className="hover:text-green-400">trayec2024sl@gmail.com</a>
+                  <a href="mailto:elrecolector2024sl@gmail.com" className="hover:text-green-400">elrecolector2024sl@gmail.com</a>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-400">
                   <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        trayec: {
+        brand: {
           green: '#15803d',
           'green-dark': '#14532d',
           'green-light': '#dcfce7',
