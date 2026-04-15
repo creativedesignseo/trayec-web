@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Legal() {
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-24 lg:pt-28">
       <Helmet>
         <title>Aviso Legal y Política de Privacidad | El Recolector</title>
         <meta name="description" content="Información legal de El Recolector. Aviso legal, política de privacidad y política de cookies. CIF B56321581. Calle Saragossa 53, Barcelona." />

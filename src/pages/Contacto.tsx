@@ -5,7 +5,7 @@ import LocalBusinessSchema from '../components/LocalBusinessSchema';
 
 export default function Contacto() {
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-24 lg:pt-28">
       <LocalBusinessSchema />
       <Helmet>
         <title>Contacto | El Recolector | Vaciado de Pisos Barcelona</title>

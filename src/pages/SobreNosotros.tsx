@@ -4,7 +4,7 @@ import LocalBusinessSchema from '../components/LocalBusinessSchema';
 
 export default function SobreNosotros() {
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-24 lg:pt-28">
       <LocalBusinessSchema />
       <Helmet>
         <title>Sobre Nosotros | El Recolector | Vaciados y Reformas Cataluña</title>
