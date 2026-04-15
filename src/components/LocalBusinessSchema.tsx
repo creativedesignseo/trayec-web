@@ -4,7 +4,7 @@ const schemaLocalBusiness = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'El Recolector',
-  image: 'https://trayec-web.netlify.app/logo.svg',
+  image: 'https://trayec-web.netlify.app/favicon.png',
   telephone: '+34694266258',
   email: 'elrecolector2024sl@gmail.com',
   address: {
