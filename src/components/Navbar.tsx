@@ -28,15 +28,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServiciosOpen, setMobileServiciosOpen] = useState(false);
   const [desktopServiciosOpen, setDesktopServiciosOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const desktopDropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Handle initial hash on load
   useEffect(() => {
@@ -74,13 +67,15 @@ export default function Navbar() {
   };
 
   const isActive = (href: string) => location.pathname === href;
+  const isServiceActive =
+    location.pathname.startsWith('/vaciado-pisos') ||
+    location.pathname.startsWith('/recogida-muebles') ||
+    location.pathname.startsWith('/reformas') ||
+    location.pathname.startsWith('/limpieza-post-obra') ||
+    location.pathname.startsWith('/pintura');
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 lg:py-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
@@ -92,7 +87,7 @@ export default function Navbar() {
           <button
             type="button"
             aria-label="Abrir menú"
-            className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ${scrolled ? 'text-slate-800' : 'text-white'}`}
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-800"
             onClick={() => setMobileMenuOpen(true)}
           >
             <Menu className="h-6 w-6" />
@@ -104,11 +99,7 @@ export default function Navbar() {
           <Link
             to="/"
             className={`text-sm font-semibold transition ${
-              scrolled
-                ? isActive('/')
-                  ? 'text-green-600'
-                  : 'text-slate-700 hover:text-green-600'
-                : 'text-white/90 hover:text-white'
+              isActive('/') ? 'text-green-600' : 'text-slate-700 hover:text-green-600'
             }`}
           >
             Inicio
@@ -120,15 +111,7 @@ export default function Navbar() {
               onClick={() => setDesktopServiciosOpen((v) => !v)}
               onMouseEnter={() => setDesktopServiciosOpen(true)}
               className={`inline-flex items-center gap-1 text-sm font-semibold transition ${
-                scrolled
-                  ? location.pathname.startsWith('/vaciado-pisos') ||
-                    location.pathname.startsWith('/recogida-muebles') ||
-                    location.pathname.startsWith('/reformas') ||
-                    location.pathname.startsWith('/limpieza-post-obra') ||
-                    location.pathname.startsWith('/pintura')
-                    ? 'text-green-600'
-                    : 'text-slate-700 hover:text-green-600'
-                  : 'text-white/90 hover:text-white'
+                isServiceActive ? 'text-green-600' : 'text-slate-700 hover:text-green-600'
               }`}
             >
               Servicios
@@ -171,11 +154,9 @@ export default function Navbar() {
               to={item.href}
               onClick={(e) => handleNavClick(e, item.href)}
               className={`text-sm font-semibold transition ${
-                scrolled
-                  ? location.pathname + location.hash === item.href || location.pathname === item.href
-                    ? 'text-green-600'
-                    : 'text-slate-700 hover:text-green-600'
-                  : 'text-white/90 hover:text-white'
+                location.pathname + location.hash === item.href || location.pathname === item.href
+                  ? 'text-green-600'
+                  : 'text-slate-700 hover:text-green-600'
               }`}
             >
               {item.name}
@@ -186,7 +167,7 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
           <a
             href="tel:694266258"
-            className={`inline-flex items-center gap-2 text-sm font-bold transition ${scrolled ? 'text-green-600' : 'text-white'}`}
+            className="inline-flex items-center gap-2 text-sm font-bold text-green-600 transition"
           >
             <Phone className="h-4 w-4" />
             694 266 258
