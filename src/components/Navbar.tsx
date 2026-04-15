@@ -76,10 +76,10 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 lg:py-6 lg:px-8">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-3 py-4 lg:py-5 lg:px-6">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
-            <img src="/logo.svg" alt="El Recolector" className="h-20 w-auto" />
+            <img src="/logo.svg" alt="El Recolector" className="h-14 w-auto" />
           </Link>
         </div>
 
@@ -129,7 +129,7 @@ export default function Navbar() {
                     handleNavClick(e, '#servicios');
                     setDesktopServiciosOpen(false);
                   }}
-                  className="block rounded-xl px-4 py-2 text-sm font-semibold text-green-600 hover:bg-green-50"
+                  className="block rounded-xl px-4 py-2 text-base font-semibold text-green-600 hover:bg-green-50"
                 >
                   Ver todos los servicios
                 </Link>
@@ -139,7 +139,7 @@ export default function Navbar() {
                     key={s.name}
                     to={s.href}
                     onClick={() => setDesktopServiciosOpen(false)}
-                    className="block rounded-xl px-4 py-2 text-sm font-medium text-slate-700 hover:bg-green-50 hover:text-green-600"
+                    className="block rounded-xl px-4 py-2 text-base font-medium text-slate-700 hover:bg-green-50 hover:text-green-600"
                   >
                     {s.name}
                   </Link>
@@ -167,7 +167,7 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
           <a
             href="tel:694266258"
-            className="inline-flex items-center gap-2 text-sm font-bold text-green-600 transition"
+            className="inline-flex items-center gap-2 text-base font-bold text-green-600 transition"
           >
             <Phone className="h-4 w-4" />
             694 266 258
@@ -205,7 +205,7 @@ export default function Navbar() {
                   <Link
                     to="/"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-slate-800 hover:bg-green-50 hover:text-green-600"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold text-slate-800 hover:bg-green-50 hover:text-green-600"
                   >
                     Inicio
                   </Link>
@@ -215,7 +215,7 @@ export default function Navbar() {
                     <button
                       type="button"
                       onClick={() => setMobileServiciosOpen((v) => !v)}
-                      className="flex w-full items-center justify-between text-left text-base font-semibold text-slate-800"
+                      className="flex w-full items-center justify-between text-left text-lg font-semibold text-slate-800"
                     >
                       <span className={mobileServiciosOpen ? 'text-green-600' : ''}>Servicios</span>
                       <ChevronDown className={`h-5 w-5 text-slate-500 transition ${mobileServiciosOpen ? 'rotate-180' : ''}`} />
@@ -228,7 +228,7 @@ export default function Navbar() {
                             handleNavClick(e, '#servicios');
                             setMobileMenuOpen(false);
                           }}
-                          className="block rounded-lg px-3 py-2 text-lg font-bold text-green-600 hover:bg-green-50"
+                          className="block rounded-lg px-3 py-2 text-xl font-bold text-green-600 hover:bg-green-50"
                         >
                           Ver todos
                         </Link>
@@ -237,7 +237,7 @@ export default function Navbar() {
                             key={s.name}
                             to={s.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block rounded-lg px-3 py-2 text-lg font-bold text-slate-700 hover:bg-green-50 hover:text-green-600"
+                            className="block rounded-lg px-3 py-2 text-xl font-bold text-slate-700 hover:bg-green-50 hover:text-green-600"
                           >
                             {s.name}
                           </Link>
@@ -251,14 +251,14 @@ export default function Navbar() {
                       key={item.name}
                       to={item.href}
                       onClick={(e) => handleNavClick(e, item.href)}
-                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-slate-800 hover:bg-green-50 hover:text-green-600"
+                      className="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold text-slate-800 hover:bg-green-50 hover:text-green-600"
                     >
                       {item.name}
                     </Link>
                   ))}
                 </div>
                 <div className="py-6 space-y-4">
-                  <a href="tel:694266258" className="flex items-center gap-2 text-lg font-bold text-green-600">
+                  <a href="tel:694266258" className="flex items-center gap-2 text-xl font-bold text-green-600">
                     <Phone className="h-5 w-5" />
                     694 266 258
                   </a>
