@@ -13,8 +13,7 @@ const beneficios = [
 ];
 
 const ciudades = [
-  'Barcelona', 'Badalona', 'Hospitalet', 'Cornellà', 'Sabadell', 'Terrassa',
-  'Tarragona', 'Reus', 'Girona', 'Figueres', 'Lleida'
+  'Barcelona', 'Badalona', 'Lleida'
 ];
 
 export default function VaciadoPisos() {
