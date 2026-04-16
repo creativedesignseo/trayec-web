@@ -6,7 +6,7 @@ const schemaLocalBusiness = {
   name: 'El Recolector',
   image: 'https://trayec-web.netlify.app/favicon.png',
   telephone: '+34694266258',
-  email: 'trayec2024sl@gmail.com',
+  email: 'info@elrecolector.es',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Calle Saragossa 53, 3-1',

@@ -31,7 +31,7 @@ export default function Legal() {
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>CIF:</strong> B56321581</li>
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>Dirección:</strong> Calle Saragossa 53, 3-1, Barcelona</li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-green-600" /> <strong>Teléfono:</strong> 694 266 258</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-green-600" /> <strong>Email:</strong> trayec2024sl@gmail.com</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-green-600" /> <strong>Email:</strong> info@elrecolector.es</li>
           </ul>
 
           <h2 className="mt-10 text-2xl font-bold text-slate-900">Política de Privacidad</h2>
@@ -39,7 +39,7 @@ export default function Legal() {
             El Recolector se compromete a proteger la información personal de los usuarios. Los datos recogidos a través del formulario de contacto serán utilizados exclusivamente para gestionar su solicitud y nunca serán cedidos a terceros sin su consentimiento.
           </p>
           <p className="mt-4 text-slate-600">
-            Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición contactando con nosotros a través del email trayec2024sl@gmail.com.
+            Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición contactando con nosotros a través del email info@elrecolector.es.
           </p>
 
           <h2 className="mt-10 text-2xl font-bold text-slate-900">Política de Cookies</h2>
