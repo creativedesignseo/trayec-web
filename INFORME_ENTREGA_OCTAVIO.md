@@ -57,17 +57,8 @@ Se corrigió la posición del formulario dentro de todas las páginas con hero.
 A petición del cliente, se depuró el listado de ciudades que aparece en la sección de cobertura de la landing **"Vaciado de Pisos"**.
 
 ### Lo que se hizo:
-- ✅ Se eliminaron las siguientes ciudades del listado:
-  - Hospitalet
-  - Cornellà
-  - Sabadell
-  - Terrassa
-  - Tarragona
-  - Reus
-  - Girona
-  - Figueres
-- ✅ El listado actualizado muestra ahora: **Barcelona, Badalona, Lleida**.
-- ✅ Se corrigió el texto descriptivo inferior para que también mencione únicamente **Barcelona, Badalona y Lleida**.
+- ✅ El listado de ciudades en la sección "Vaciado de pisos en toda Cataluña" ha sido actualizado a: **Barcelona, Tarragona, Lleida, Girona**.
+- ✅ Se corrigió el texto descriptivo inferior para que coincida con el listado y mencione **Barcelona, Tarragona, Lleida y Girona**.
 
 ---
 
