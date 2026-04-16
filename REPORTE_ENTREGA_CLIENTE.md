@@ -65,7 +65,35 @@ Se actualizó el email de contacto en todo el sitio para alinearse con el nuevo 
 
 ---
 
-## 6. Construcción y despliegue técnico
+## 6. Ajustes de contenido adicionales
+
+### 6.1. Texto principal de la Home
+- ✅ Se cambió el eslogan:
+  - De: *"Tu equipo de confianza para vaciados y reformas"*
+  - A: *"Tu equipo de confianza para vaciados y recogidas de muebles"*
+
+### 6.2. Copyright del footer
+- ✅ Se actualizó el texto legal del pie de página:
+  - Ahora dice: **"Copyright © 2026 El Recolector . Reservados todos los derechos"**
+
+### 6.3. Nuevo servicio en Reformas
+- ✅ Se añadió la tarjeta **"Electricidad"** en la página de `/reformas`, junto a Baño, Cocina, Integrales y Acabados.
+  - Descripción: *"Instalaciones eléctricas completas, cambio de cuadros, puntos de luz y certificados."*
+
+### 6.4. Sobre Nosotros
+- ✅ Se simplificó la mención de servicios. Ahora dice **"limpieza"** en vez de "limpieza post-obra".
+
+### 6.5. Formulario de contacto
+- ✅ Se añadió un nuevo campo **"Correo electrónico"** en el formulario de solicitud de presupuesto (`LeadForm`), ubicado entre el teléfono y la ciudad.
+
+### 6.6. Renombrado del servicio de Limpieza
+- ✅ **Cambio global** de "Limpieza Post-Obra" a simplemente **"Limpieza"**.
+- ✅ Se cambió la URL de `/limpieza-post-obra` a `/limpieza` en toda la web (menú, footer, home, rutas).
+- ✅ Se eliminaron las palabras "post obra" y "post vaciado" del título, metadatos SEO, hero y tarjetas de servicio de la página de Limpieza.
+
+---
+
+## 7. Construcción y despliegue técnico
 Todos los cambios fueron verificados y publicados correctamente.
 
 ### Estado técnico:
