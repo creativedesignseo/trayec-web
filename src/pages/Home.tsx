@@ -114,7 +114,7 @@ export default function Home() {
                 Disponible 24h en toda Cataluña
               </div>
               <h1 className="mt-6 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
-                Vaciado de pisos <span className="text-green-400">sin estrés</span>
+                Vaciado de pisos <span className="text-green-400">urgente</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
                 Servicio rápido, limpio y profesional. Presupuesto sin coste y respuesta en menos de 1 hora. El Recolector, tu empresa de confianza en Barcelona y toda Cataluña.
