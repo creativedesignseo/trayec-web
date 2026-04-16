@@ -45,7 +45,7 @@ export default function Limpieza() {
                 </a>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative self-center pt-8 lg:pt-0">
               <LeadForm servicio="Limpieza" title="Solicita limpieza profesional" variant="dark" />
             </div>
           </div>

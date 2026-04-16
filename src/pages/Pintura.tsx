@@ -45,7 +45,7 @@ export default function Pintura() {
                 </a>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative self-center pt-8 lg:pt-0">
               <LeadForm servicio="Pintura" title="Presupuesto de pintura gratis" variant="dark" />
             </div>
           </div>

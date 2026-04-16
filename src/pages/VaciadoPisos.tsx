@@ -62,7 +62,7 @@ export default function VaciadoPisos() {
                 </a>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative self-center pt-8 lg:pt-0">
               <LeadForm servicio="Vaciado de Pisos" title="Presupuesto gratis para vaciado" variant="dark" />
             </div>
           </div>

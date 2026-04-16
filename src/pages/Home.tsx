@@ -145,7 +145,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative self-center pt-8 lg:pt-0">
               <LeadForm title="Pide tu presupuesto gratis" variant="dark" />
             </div>
           </div>

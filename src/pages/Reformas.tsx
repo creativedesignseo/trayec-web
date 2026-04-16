@@ -53,7 +53,7 @@ export default function Reformas() {
                 </a>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative self-center pt-8 lg:pt-0">
               <LeadForm servicio="Reformas" title="Presupuesto para reformas" variant="dark" />
             </div>
           </div>

@@ -54,7 +54,7 @@ export default function RecogidaMuebles() {
                 </a>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative self-center pt-8 lg:pt-0">
               <LeadForm servicio="Recogida de Muebles" title="Solicita recogida de muebles" variant="dark" />
             </div>
           </div>
