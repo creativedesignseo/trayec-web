@@ -53,11 +53,15 @@ A petición del cliente, se depuró el listado de ciudades que aparece en la sec
 
 ---
 
-## 5. Datos de contacto originales preservados
-Se mantuvo el email original del cliente en todo el sitio.
+## 5. Actualización del correo electrónico corporativo
+Se actualizó el email de contacto en todo el sitio para alinearse con el nuevo dominio de marca.
 
 ### Lo que se hizo:
-- ✅ Se dejó el email de contacto tal como lo tenía el cliente: **trayec2024sl@gmail.com** en el footer, página de contacto, aviso legal y schema de Google.
+- ✅ Se reemplazó el email anterior por **info@elrecolector.es** en todas las secciones del sitio:
+  - Pie de página (Footer)
+  - Página de Contacto
+  - Aviso Legal
+  - Schema de Google (LocalBusiness) para SEO local
 
 ---
 
