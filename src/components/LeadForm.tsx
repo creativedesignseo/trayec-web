@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, CheckCircle, Phone, User, MapPin, MessageSquare } from 'lucide-react';
+import { Send, CheckCircle, Phone, User, MapPin, MessageSquare, Mail } from 'lucide-react';
 
 interface LeadFormProps {
   servicio?: string;
@@ -63,6 +63,20 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
             type="tel"
             required
             placeholder="Teléfono"
+            className={`w-full rounded-full border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
+              variant === 'dark'
+                ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-green-500'
+                : 'bg-slate-50 text-slate-900 placeholder-slate-400 ring-slate-200 focus:ring-green-500'
+            }`}
+          />
+        </div>
+
+        <div className="relative">
+          <Mail className={`absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400`} />
+          <input
+            name="email"
+            type="email"
+            placeholder="Correo electrónico"
             className={`w-full rounded-full border-0 py-3 pl-11 pr-4 text-sm outline-none ring-1 transition focus:ring-2 ${
               variant === 'dark'
                 ? 'bg-slate-800 text-white placeholder-slate-400 ring-slate-700 focus:ring-green-500'

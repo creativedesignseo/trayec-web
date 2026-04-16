@@ -27,7 +27,7 @@ export default function SobreNosotros() {
           <div>
             <h2 className="section-title">Profesionales del vaciado y la reforma</h2>
             <p className="mt-4 text-lg text-slate-600">
-              En El Recolector llevamos más de un año ofreciendo servicios profesionales de vaciado de pisos, recogida de muebles, reformas integrales, limpieza post-obra y pintura en toda Cataluña.
+              En El Recolector llevamos más de un año ofreciendo servicios profesionales de vaciado de pisos, recogida de muebles, reformas integrales, limpieza y pintura en toda Cataluña.
             </p>
             <p className="mt-4 text-lg text-slate-600">
               Nuestro objetivo es simple: hacer que cada cliente quede satisfecho con un servicio rápido, limpio y transparente. Nos encargamos de todo, desde el primer contacto hasta la limpieza final.

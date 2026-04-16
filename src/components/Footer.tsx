@@ -6,7 +6,7 @@ const footerLinks = {
     { name: 'Vaciado de Pisos', href: '/vaciado-pisos' },
     { name: 'Recogida de Muebles', href: '/recogida-muebles' },
     { name: 'Reformas', href: '/reformas' },
-    { name: 'Limpieza', href: '/limpieza-post-obra' },
+    { name: 'Limpieza', href: '/limpieza' },
     { name: 'Pintura', href: '/pintura' },
   ],
   empresa: [
@@ -99,7 +99,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 sm:flex-row">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} El Recolector — B56321581. Todos los derechos reservados.
+            Copyright © {new Date().getFullYear()} El Recolector . Reservados todos los derechos
           </p>
           <div className="flex gap-4">
             <a href="https://wa.me/34694266258" target="_blank" rel="noreferrer" className="rounded-full bg-[#25D366] px-4 py-2 text-xs font-semibold text-white hover:opacity-90 transition">

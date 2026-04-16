@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Phone, CheckCircle, Sparkles, Hammer, Paintbrush, Ruler, ArrowRight } from 'lucide-react';
+import { Phone, CheckCircle, Sparkles, Hammer, Paintbrush, Ruler, Zap, ArrowRight } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
 
@@ -8,6 +8,7 @@ const serviciosReforma = [
   { icon: Sparkles, title: 'Reformas de cocina', desc: 'Mobiliario, encimeras, electrodomésticos integrados y fontanería.' },
   { icon: Ruler, title: 'Reformas integrales', desc: 'Renovación completa de viviendas y locales comerciales.' },
   { icon: Paintbrush, title: 'Acabados', desc: 'Pintura, suelos, falsos techos e iluminación.' },
+  { icon: Zap, title: 'Electricidad', desc: 'Instalaciones eléctricas completas, cambio de cuadros, puntos de luz y certificados.' },
 ];
 
 export default function Reformas() {

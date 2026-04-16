@@ -28,10 +28,10 @@ const servicios = [
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80',
   },
   {
-    name: 'Limpieza Post-Obra',
+    name: 'Limpieza',
     description: 'Dejamos el espacio impecable después del vaciado o la reforma.',
     icon: Shield,
-    href: '/limpieza-post-obra',
+    href: '/limpieza',
     image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80',
   },
   {
@@ -178,7 +178,7 @@ export default function Home() {
           </div>
           <div>
             <h2 className="section-title">
-              Tu equipo de confianza para vaciados y reformas
+              Tu equipo de confianza para vaciados y recogidas de muebles
             </h2>
             <p className="mt-4 text-lg text-slate-600">
               En El Recolector combinamos rapidez, profesionalidad y respeto por el medio ambiente. Reciclamos todo lo que podemos y garantizamos un servicio limpio de principio a fin.

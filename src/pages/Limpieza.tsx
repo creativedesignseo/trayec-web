@@ -8,16 +8,16 @@ export default function Limpieza() {
     <div className="bg-white">
       <LocalBusinessSchema />
       <Helmet>
-        <title>Limpieza Post Obra Barcelona | El Recolector</title>
-        <meta name="description" content="Limpieza profesional post obra y post vaciado en Barcelona y toda Cataluña. Dejamos tu espacio impecable. Presupuesto gratis y respuesta en menos de 1h." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/limpieza-post-obra" />
+        <title>Limpieza Barcelona | El Recolector</title>
+        <meta name="description" content="Servicio profesional de limpieza en Barcelona y toda Cataluña. Dejamos tu espacio impecable. Presupuesto gratis y respuesta en menos de 1h." />
+        <link rel="canonical" href="https://trayec-web.netlify.app/limpieza" />
       </Helmet>
 
       <div className="relative min-h-[65vh] sm:min-h-[80vh]">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80"
-            alt="Limpieza post obra Barcelona"
+            alt="Limpieza Barcelona"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />
@@ -30,7 +30,7 @@ export default function Limpieza() {
                 Limpieza profesional en Cataluña
               </div>
               <h1 className="mt-6 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
-                Limpieza post obra <span className="text-green-400">y post vaciado</span>
+                Limpieza
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
                 Dejamos tu piso, local o nave impecable después de una reforma o vaciado. Limpieza profunda con productos profesionales.
@@ -46,7 +46,7 @@ export default function Limpieza() {
               </div>
             </div>
             <div className="relative">
-              <LeadForm servicio="Limpieza Post-Obra" title="Solicita limpieza profesional" variant="dark" />
+              <LeadForm servicio="Limpieza" title="Solicita limpieza profesional" variant="dark" />
             </div>
           </div>
         </div>
@@ -61,8 +61,8 @@ export default function Limpieza() {
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { icon: HomeIcon, title: 'Limpieza post vaciado', desc: 'Eliminación de polvo, suciedad acumulada y restos tras el vaciado completo.' },
-            { icon: Droplets, title: 'Limpieza post obra', desc: 'Retirada de restos de cemento, pintura y polvo de construcción.' },
+            { icon: HomeIcon, title: 'Limpieza de espacios', desc: 'Eliminación de polvo, suciedad acumulada y restos tras el vaciado completo.' },
+            { icon: Droplets, title: 'Limpieza de obra', desc: 'Retirada de restos de cemento, pintura y polvo de construcción.' },
             { icon: Shield, title: 'Desinfección profunda', desc: 'Tratamiento antibacteriano y desinfección de todas las superficies.' },
           ].map((s) => (
             <div key={s.title} className="rounded-2xl bg-slate-50 p-6 ring-1 ring-slate-100">

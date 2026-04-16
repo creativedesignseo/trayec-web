@@ -6,7 +6,7 @@ const servicios = [
   { name: 'Vaciado de Pisos', href: '/vaciado-pisos' },
   { name: 'Recogida de Muebles', href: '/recogida-muebles' },
   { name: 'Reformas Integrales', href: '/reformas' },
-  { name: 'Limpieza Post-Obra', href: '/limpieza-post-obra' },
+  { name: 'Limpieza', href: '/limpieza' },
   { name: 'Pintura Profesional', href: '/pintura' },
 ];
 
@@ -71,7 +71,7 @@ export default function Navbar() {
     location.pathname.startsWith('/vaciado-pisos') ||
     location.pathname.startsWith('/recogida-muebles') ||
     location.pathname.startsWith('/reformas') ||
-    location.pathname.startsWith('/limpieza-post-obra') ||
+    location.pathname.startsWith('/limpieza') ||
     location.pathname.startsWith('/pintura');
 
   return (

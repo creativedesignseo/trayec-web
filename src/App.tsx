@@ -24,7 +24,7 @@ function App() {
           <Route path="/vaciado-pisos" element={<VaciadoPisos />} />
           <Route path="/recogida-muebles" element={<RecogidaMuebles />} />
           <Route path="/reformas" element={<Reformas />} />
-          <Route path="/limpieza-post-obra" element={<Limpieza />} />
+          <Route path="/limpieza" element={<Limpieza />} />
           <Route path="/pintura" element={<Pintura />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/legal" element={<Legal />} />
