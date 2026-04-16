@@ -13,7 +13,7 @@ const beneficios = [
 ];
 
 const ciudades = [
-  'Barcelona', 'Tarragona', 'Lleida', 'Girona'
+  'Barcelona', 'Tarragona', 'Girona', 'Lleida'
 ];
 
 export default function VaciadoPisos() {
@@ -138,7 +138,7 @@ export default function VaciadoPisos() {
                 Vaciado de pisos en toda Cataluña
               </h2>
               <p className="mt-4 text-lg text-slate-300">
-                Desplazamos nuestro equipo a cualquier punto de Barcelona, Tarragona, Lleida y Girona. No importa el tamaño del trabajo.
+                Desplazamos nuestro equipo a cualquier punto de Barcelona, Tarragona, Girona y Lleida. No importa el tamaño del trabajo.
               </p>
               <a href="tel:694266258" className="btn-cta mt-8 inline-flex items-center gap-2">
                 <Phone className="h-5 w-5" />
