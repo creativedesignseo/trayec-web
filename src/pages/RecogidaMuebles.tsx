@@ -32,7 +32,7 @@ export default function RecogidaMuebles() {
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />
         </div>
         <div className="relative mx-auto flex min-h-[80vh] max-w-7xl items-center px-4 py-24 sm:px-6 lg:px-8">
-          <div className="grid w-full gap-12 lg:grid-cols-2 lg:items-center">
+          <div className="grid w-full gap-12 lg:grid-cols-2 items-center lg:h-full">
             <div className="text-white">
               <div className="inline-flex items-center gap-2 rounded-full bg-green-500/10 px-4 py-1.5 text-sm font-medium text-green-400 ring-1 ring-inset ring-green-500/20">
                 <Truck className="h-4 w-4" />
@@ -54,7 +54,7 @@ export default function RecogidaMuebles() {
                 </a>
               </div>
             </div>
-            <div className="relative self-center pt-8 lg:pt-0">
+            <div className="relative flex flex-col justify-center pt-8 lg:pt-0">
               <LeadForm servicio="Recogida de Muebles" title="Solicita recogida de muebles" variant="dark" />
             </div>
           </div>
