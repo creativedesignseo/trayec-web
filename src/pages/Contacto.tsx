@@ -51,8 +51,8 @@ export default function Contacto() {
                   <div>
                     <dt className="text-sm font-semibold text-slate-500">Email</dt>
                     <dd className="mt-1">
-                      <a href="mailto:elrecolector2024sl@gmail.com" className="text-lg font-semibold text-slate-900 hover:text-green-600">
-                        elrecolector2024sl@gmail.com
+                      <a href="mailto:trayec2024sl@gmail.com" className="text-lg font-semibold text-slate-900 hover:text-green-600">
+                        trayec2024sl@gmail.com
                       </a>
                     </dd>
                   </div>
