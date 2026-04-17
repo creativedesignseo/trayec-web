@@ -4,7 +4,7 @@ const schemaLocalBusiness = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'El Recolector',
-  image: 'https://trayec-web.netlify.app/favicon.png',
+  image: 'https://elrecolector.es/favicon.png',
   telephone: '+34694266258',
   email: 'info@elrecolector.es',
   address: {
@@ -14,7 +14,7 @@ const schemaLocalBusiness = {
     addressRegion: 'Cataluña',
     addressCountry: 'ES',
   },
-  url: 'https://trayec-web.netlify.app',
+  url: 'https://elrecolector.es',
   priceRange: '€',
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',

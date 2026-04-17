@@ -19,7 +19,7 @@ export default function RecogidaMuebles() {
       <Helmet>
         <title>Recogida de Muebles Gratis Barcelona | El Recolector</title>
         <meta name="description" content="Recogida de muebles, electrodomésticos y enseres en Barcelona y toda Cataluña. Si están en buen estado, la retirada puede ser gratuita. Presupuesto sin coste." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/recogida-muebles" />
+        <link rel="canonical" href="https://elrecolector.es/recogida-muebles" />
       </Helmet>
 
       <div className="relative min-h-[65vh] sm:min-h-[80vh]">

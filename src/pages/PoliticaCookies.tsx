@@ -6,7 +6,7 @@ export default function PoliticaCookies() {
       <Helmet>
         <title>Política de Cookies | El Recolector</title>
         <meta name="description" content="Política de cookies de El Recolector. Información sobre las cookies que utilizamos y cómo gestionarlas." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/politica-cookies" />
+        <link rel="canonical" href="https://elrecolector.es/politica-cookies" />
       </Helmet>
 
       <div className="relative bg-slate-900 py-20">

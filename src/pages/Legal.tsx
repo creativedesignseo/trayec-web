@@ -7,7 +7,7 @@ export default function Legal() {
       <Helmet>
         <title>Aviso Legal y Política de Privacidad | El Recolector</title>
         <meta name="description" content="Información legal de El Recolector. Aviso legal, política de privacidad y política de cookies. CIF B56321581. Calle Saragossa 53, Barcelona." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/legal" />
+        <link rel="canonical" href="https://elrecolector.es/legal" />
       </Helmet>
 
       <div className="relative bg-slate-900 py-20">

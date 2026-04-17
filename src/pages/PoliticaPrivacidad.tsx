@@ -6,7 +6,7 @@ export default function PoliticaPrivacidad() {
       <Helmet>
         <title>Política de Privacidad | El Recolector</title>
         <meta name="description" content="Política de privacidad de El Recolector. Protección de datos personales conforme al RGPD y la LOPDGDD." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/politica-privacidad" />
+        <link rel="canonical" href="https://elrecolector.es/politica-privacidad" />
       </Helmet>
 
       <div className="relative bg-slate-900 py-20">

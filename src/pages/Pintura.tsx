@@ -10,7 +10,7 @@ export default function Pintura() {
       <Helmet>
         <title>Pintores Económicos Barcelona | Interiores y Exteriores | El Recolector</title>
         <meta name="description" content="Pintores profesionales en Barcelona y toda Cataluña. Pintura de interiores, exteriores, baños y cocinas. Presupuesto gratis y acabados de calidad." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/pintura" />
+        <link rel="canonical" href="https://elrecolector.es/pintura" />
       </Helmet>
 
       <div className="relative min-h-[65vh] sm:min-h-[80vh]">

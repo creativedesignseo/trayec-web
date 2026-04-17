@@ -23,7 +23,7 @@ export default function VaciadoPisos() {
       <Helmet>
         <title>Vaciado de Pisos Barcelona y Cataluña | El Recolector</title>
         <meta name="description" content="Servicio profesional de vaciado de pisos, locales, naves y trasteros en Barcelona y toda Cataluña. Presupuesto gratis y respuesta en menos de 1 hora." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/vaciado-pisos" />
+        <link rel="canonical" href="https://elrecolector.es/vaciado-pisos" />
       </Helmet>
 
       {/* Hero */}

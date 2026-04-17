@@ -7,7 +7,7 @@ export default function AvisoLegal() {
       <Helmet>
         <title>Aviso Legal | El Recolector</title>
         <meta name="description" content="Aviso legal de El Recolector. Datos del titular, CIF B56321581, dirección y contacto." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/aviso-legal" />
+        <link rel="canonical" href="https://elrecolector.es/aviso-legal" />
       </Helmet>
 
       <div className="relative bg-slate-900 py-20">

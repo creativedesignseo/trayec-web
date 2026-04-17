@@ -18,7 +18,7 @@ export default function Reformas() {
       <Helmet>
         <title>Reformas Integrales Barcelona | Baños y Cocinas | El Recolector</title>
         <meta name="description" content="Reformas integrales de baños, cocinas y viviendas completas en Barcelona y toda Cataluña. Presupuesto detallado sin coste y ejecución en plazos ajustados." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/reformas" />
+        <link rel="canonical" href="https://elrecolector.es/reformas" />
       </Helmet>
 
       <div className="relative min-h-[65vh] sm:min-h-[80vh]">

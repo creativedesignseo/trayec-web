@@ -9,7 +9,7 @@ export default function SobreNosotros() {
       <Helmet>
         <title>Sobre Nosotros | El Recolector | Vaciados y Reformas Cataluña</title>
         <meta name="description" content="Conoce El Recolector. Empresa profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en Barcelona y toda Cataluña." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/sobre-nosotros" />
+        <link rel="canonical" href="https://elrecolector.es/sobre-nosotros" />
       </Helmet>
 
       <div className="relative bg-slate-900 py-20">

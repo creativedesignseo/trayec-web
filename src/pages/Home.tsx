@@ -89,7 +89,7 @@ export default function Home() {
       <Helmet>
         <title>El Recolector | Vaciado de Pisos y Recogida de Muebles en Cataluña</title>
         <meta name="description" content="Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en Barcelona y toda Cataluña. Presupuesto gratis y respuesta en menos de 1h." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/" />
+        <link rel="canonical" href="https://elrecolector.es/" />
       </Helmet>
 
       {/* Hero */}

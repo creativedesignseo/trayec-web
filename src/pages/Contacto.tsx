@@ -10,7 +10,7 @@ export default function Contacto() {
       <Helmet>
         <title>Contacto | El Recolector | Vaciado de Pisos Barcelona</title>
         <meta name="description" content="Contacta con El Recolector. Teléfono 694 266 258. Servicio de vaciado de pisos, recogida de muebles y reformas en Barcelona y toda Cataluña. Disponible 24h." />
-        <link rel="canonical" href="https://trayec-web.netlify.app/contacto" />
+        <link rel="canonical" href="https://elrecolector.es/contacto" />
       </Helmet>
 
       <div className="relative bg-slate-900 py-20">
