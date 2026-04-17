@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const footerLinks = {
@@ -25,31 +25,16 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        {/* Desktop: 5 equal columns | Mobile: stacked */}
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
-          {/* Branding */}
-          <div className="lg:col-span-2">
+        {/* Desktop: 5 equal columns | Mobile: 2 cols → stacked */}
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
+          {/* Logo + descripción */}
+          <div>
             <Link to="/" className="inline-block">
               <img src="/logo.svg" alt="El Recolector" className="h-14 w-auto" />
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
+            <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en toda Cataluña.
             </p>
-
-            <form className="mt-6" onSubmit={(e) => e.preventDefault()}>
-              <p className="text-sm font-semibold text-white">Solicita tu presupuesto gratis</p>
-              <div className="mt-3 flex gap-2">
-                <input
-                  type="tel"
-                  placeholder="Tu teléfono"
-                  className="flex-1 rounded-full border-0 bg-slate-800 px-4 py-3 text-sm text-white placeholder-slate-400 outline-none ring-1 ring-slate-700 focus:ring-2 focus:ring-green-500"
-                />
-                <button type="submit" className="btn-primary whitespace-nowrap">
-                  <span className="hidden sm:inline">Enviar</span>
-                  <ArrowRight className="h-4 w-4 sm:ml-2" />
-                </button>
-              </div>
-            </form>
           </div>
 
           {/* Servicios */}
@@ -80,7 +65,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal + Contacto */}
+          {/* Legal */}
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-white">Legal</h3>
             <ul className="mt-4 space-y-3">
@@ -92,8 +77,11 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
 
-            <h3 className="mt-8 text-sm font-bold uppercase tracking-wider text-white">Contacto</h3>
+          {/* Contacto */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white">Contacto</h3>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-2 text-sm text-slate-400">
                 <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
