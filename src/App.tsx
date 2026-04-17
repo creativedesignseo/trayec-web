@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import CookieBanner from './components/CookieBanner';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Contacto from './pages/Contacto';
@@ -10,7 +11,9 @@ import Reformas from './pages/Reformas';
 import Limpieza from './pages/Limpieza';
 import Pintura from './pages/Pintura';
 import SobreNosotros from './pages/SobreNosotros';
-import Legal from './pages/Legal';
+import AvisoLegal from './pages/AvisoLegal';
+import PoliticaPrivacidad from './pages/PoliticaPrivacidad';
+import PoliticaCookies from './pages/PoliticaCookies';
 
 function App() {
   return (
@@ -27,10 +30,13 @@ function App() {
           <Route path="/limpieza" element={<Limpieza />} />
           <Route path="/pintura" element={<Pintura />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
-          <Route path="/legal" element={<Legal />} />
+          <Route path="/aviso-legal" element={<AvisoLegal />} />
+          <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+          <Route path="/politica-cookies" element={<PoliticaCookies />} />
         </Routes>
       </main>
       <Footer />
+      <CookieBanner />
     </div>
   );
 }

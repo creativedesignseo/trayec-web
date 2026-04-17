@@ -13,7 +13,11 @@ const footerLinks = {
     { name: 'Inicio', href: '/' },
     { name: 'Sobre Nosotros', href: '/sobre-nosotros' },
     { name: 'Contacto', href: '/contacto' },
-    { name: 'Aviso Legal', href: '/legal' },
+  ],
+  legal: [
+    { name: 'Aviso Legal', href: '/aviso-legal' },
+    { name: 'Privacidad', href: '/politica-privacidad' },
+    { name: 'Cookies', href: '/politica-cookies' },
   ],
 };
 
@@ -46,7 +50,7 @@ export default function Footer() {
             </form>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7 lg:justify-items-end">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:col-span-7 lg:justify-items-end">
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-white">Servicios</h3>
               <ul className="mt-4 space-y-3">
@@ -64,6 +68,19 @@ export default function Footer() {
               <h3 className="text-sm font-bold uppercase tracking-wider text-white">Empresa</h3>
               <ul className="mt-4 space-y-3">
                 {footerLinks.empresa.map((item) => (
+                  <li key={item.name}>
+                    <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-bold uppercase tracking-wider text-white">Legal</h3>
+              <ul className="mt-4 space-y-3">
+                {footerLinks.legal.map((item) => (
                   <li key={item.name}>
                     <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
                       {item.name}
