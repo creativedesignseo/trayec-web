@@ -25,16 +25,18 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-5">
+        {/* Desktop: 5 equal columns | Mobile: stacked */}
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
+          {/* Branding */}
+          <div className="lg:col-span-2">
             <Link to="/" className="inline-block">
               <img src="/logo.svg" alt="El Recolector" className="h-14 w-auto" />
             </Link>
-            <p className="mt-4 max-w-sm text-slate-400">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
               Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en toda Cataluña.
             </p>
 
-            <form className="mt-8" onSubmit={(e) => e.preventDefault()}>
+            <form className="mt-6" onSubmit={(e) => e.preventDefault()}>
               <p className="text-sm font-semibold text-white">Solicita tu presupuesto gratis</p>
               <div className="mt-3 flex gap-2">
                 <input
@@ -50,67 +52,66 @@ export default function Footer() {
             </form>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:col-span-7 lg:justify-items-end">
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-white">Servicios</h3>
-              <ul className="mt-4 space-y-3">
-                {footerLinks.servicios.map((item) => (
-                  <li key={item.name}>
-                    <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Servicios */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white">Servicios</h3>
+            <ul className="mt-4 space-y-3">
+              {footerLinks.servicios.map((item) => (
+                <li key={item.name}>
+                  <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-white">Empresa</h3>
-              <ul className="mt-4 space-y-3">
-                {footerLinks.empresa.map((item) => (
-                  <li key={item.name}>
-                    <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Empresa */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white">Empresa</h3>
+            <ul className="mt-4 space-y-3">
+              {footerLinks.empresa.map((item) => (
+                <li key={item.name}>
+                  <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-white">Legal</h3>
-              <ul className="mt-4 space-y-3">
-                {footerLinks.legal.map((item) => (
-                  <li key={item.name}>
-                    <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Legal + Contacto */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white">Legal</h3>
+            <ul className="mt-4 space-y-3">
+              {footerLinks.legal.map((item) => (
+                <li key={item.name}>
+                  <Link to={item.href} className="text-sm text-slate-400 hover:text-green-400 transition">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-white">Contacto</h3>
-              <ul className="mt-4 space-y-3">
-                <li className="flex items-start gap-2 text-sm text-slate-400">
-                  <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
-                  <a href="tel:694266258" className="hover:text-green-400">694 266 258</a>
-                </li>
-                <li className="flex items-start gap-2 text-sm text-slate-400">
-                  <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
-                  <a href="mailto:info@elrecolector.es" className="hover:text-green-400">info@elrecolector.es</a>
-                </li>
-                <li className="flex items-start gap-2 text-sm text-slate-400">
-                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
-                  Calle Saragossa 53, 3-1<br />Barcelona
-                </li>
-                <li className="flex items-start gap-2 text-sm text-slate-400">
-                  <Clock className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
-                  Disponible 24h
-                </li>
-              </ul>
-            </div>
+            <h3 className="mt-8 text-sm font-bold uppercase tracking-wider text-white">Contacto</h3>
+            <ul className="mt-4 space-y-3">
+              <li className="flex items-start gap-2 text-sm text-slate-400">
+                <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
+                <a href="tel:694266258" className="hover:text-green-400">694 266 258</a>
+              </li>
+              <li className="flex items-start gap-2 text-sm text-slate-400">
+                <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
+                <a href="mailto:info@elrecolector.es" className="hover:text-green-400">info@elrecolector.es</a>
+              </li>
+              <li className="flex items-start gap-2 text-sm text-slate-400">
+                <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
+                Calle Saragossa 53, 3-1<br />Barcelona
+              </li>
+              <li className="flex items-start gap-2 text-sm text-slate-400">
+                <Clock className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
+                Disponible 24h
+              </li>
+            </ul>
           </div>
         </div>
 
