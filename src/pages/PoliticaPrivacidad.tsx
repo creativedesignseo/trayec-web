@@ -4,8 +4,8 @@ export default function PoliticaPrivacidad() {
   return (
     <div className="bg-white pt-24 lg:pt-28">
       <Helmet>
-        <title>Política de Privacidad | El Recolector</title>
-        <meta name="description" content="Política de privacidad de El Recolector. Protección de datos personales conforme al RGPD y la LOPDGDD." />
+        <title>Política de Privacidad | ELRECOLECTOR.ES</title>
+        <meta name="description" content="Política de privacidad de ELRECOLECTOR.ES. Protección de datos personales conforme al RGPD y la LOPDGDD." />
         <link rel="canonical" href="https://elrecolector.es/politica-privacidad" />
       </Helmet>
 
@@ -24,7 +24,7 @@ export default function PoliticaPrivacidad() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900">1. Responsable del tratamiento</h2>
             <p className="mt-4 text-slate-600">
-              El responsable del tratamiento de los datos personales recogidos a través de este sitio web es <strong>El Recolector</strong>, con CIF <strong>B56321581</strong> y domicilio en Calle Saragossa 53, 3-1, 08006 Barcelona. Puede contactar con nosotros mediante el email <strong>info@elrecolector.es</strong> o el teléfono <strong>694 266 258</strong>.
+              El responsable del tratamiento de los datos personales recogidos a través de este sitio web es <strong>VACIADO DE PISOS ELRECOLECTOR.ES</strong>, con CIF <strong>B56321581</strong> y domicilio en Calle Saragossa 53, 3-1, 08006 Barcelona. Puede contactar con nosotros mediante el email <strong>info@elrecolector.es</strong> o el teléfono <strong>694 266 258</strong>.
             </p>
           </section>
 
@@ -62,7 +62,7 @@ export default function PoliticaPrivacidad() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900">5. Destinatarios y cesiones</h2>
             <p className="mt-4 text-slate-600">
-              Los datos personales <strong>no se cederán a terceros</strong> salvo obligación legal o en los supuestos previstos en la normativa vigente. Únicamente podrán ser accedidos por el personal autorizado de El Recolector.
+              Los datos personales <strong>no se cederán a terceros</strong> salvo obligación legal o en los supuestos previstos en la normativa vigente. Únicamente podrán ser accedidos por el personal autorizado de ELRECOLECTOR.ES.
             </p>
           </section>
 
@@ -87,14 +87,14 @@ export default function PoliticaPrivacidad() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900">7. Seguridad de la información</h2>
             <p className="mt-4 text-slate-600">
-              El Recolector adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, habida cuenta del estado de la tecnología, la naturaleza de los datos y los riesgos a los que están expuestos.
+              ELRECOLECTOR.ES adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, habida cuenta del estado de la tecnología, la naturaleza de los datos y los riesgos a los que están expuestos.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-slate-900">8. Modificaciones</h2>
             <p className="mt-4 text-slate-600">
-              El Recolector se reserva el derecho a modificar la presente Política de Privacidad para adaptarla a novedades legislativas o jurisprudenciales. Cualquier cambio será publicado en esta página.
+              ELRECOLECTOR.ES se reserva el derecho a modificar la presente Política de Privacidad para adaptarla a novedades legislativas o jurisprudenciales. Cualquier cambio será publicado en esta página.
             </p>
           </section>
         </div>

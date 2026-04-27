@@ -2,14 +2,20 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, CheckCircle, Shield, Droplets, Sparkles, Home as HomeIcon, ArrowRight } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
+import ServiceSchema from '../components/ServiceSchema';
 
 export default function Limpieza() {
   return (
     <div className="bg-white">
       <LocalBusinessSchema />
+      <ServiceSchema
+        name="Limpieza Profesional"
+        description="Servicio profesional de limpieza en Barcelona y toda Cataluña. Limpieza post obra, desinfección y limpieza profunda. Presupuesto gratis."
+        url="https://elrecolector.es/limpieza"
+      />
       <Helmet>
-        <title>Limpieza Barcelona | El Recolector</title>
-        <meta name="description" content="Servicio profesional de limpieza en Barcelona y toda Cataluña. Dejamos tu espacio impecable. Presupuesto gratis y respuesta en menos de 1h." />
+        <title>Limpieza Barcelona | ELRECOLECTOR.ES</title>
+        <meta name="description" content="Servicio profesional de limpieza en Barcelona y toda Cataluña. Dejamos tu espacio impecable. Presupuesto gratis y contestaremos en menos de 10 min." />
         <link rel="canonical" href="https://elrecolector.es/limpieza" />
       </Helmet>
 

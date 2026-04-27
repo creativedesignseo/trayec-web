@@ -5,8 +5,8 @@ export default function AvisoLegal() {
   return (
     <div className="bg-white pt-24 lg:pt-28">
       <Helmet>
-        <title>Aviso Legal | El Recolector</title>
-        <meta name="description" content="Aviso legal de El Recolector. Datos del titular, CIF B56321581, dirección y contacto." />
+        <title>Aviso Legal | ELRECOLECTOR.ES</title>
+        <meta name="description" content="Aviso legal de ELRECOLECTOR.ES. Datos del titular, CIF B56321581, dirección y contacto." />
         <link rel="canonical" href="https://elrecolector.es/aviso-legal" />
       </Helmet>
 
@@ -28,7 +28,7 @@ export default function AvisoLegal() {
               En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se informa que el titular de este sitio web es:
             </p>
             <ul className="mt-4 space-y-3 text-slate-600">
-              <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600" /> <strong>Razón social:</strong> El Recolector</li>
+              <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600" /> <strong>Razón social:</strong> VACIADO DE PISOS ELRECOLECTOR.ES</li>
               <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600" /> <strong>CIF / NIF:</strong> B56321581</li>
               <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600" /> <strong>Dirección fiscal:</strong> Calle Saragossa 53, 3-1, 08006 Barcelona</li>
               <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600" /> <strong>Teléfono:</strong> 694 266 258</li>
@@ -39,28 +39,28 @@ export default function AvisoLegal() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900">2. Objeto</h2>
             <p className="mt-4 text-slate-600">
-              El presente sitio web tiene por objeto facilitar a los usuarios información sobre los servicios de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura ofrecidos por El Recolector, así como permitir la solicitud de presupuestos y contacto con la empresa.
+              El presente sitio web tiene por objeto facilitar a los usuarios información sobre los servicios de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura ofrecidos por ELRECOLECTOR.ES, así como permitir la solicitud de presupuestos y contacto con la empresa.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-slate-900">3. Propiedad intelectual e industrial</h2>
             <p className="mt-4 text-slate-600">
-              Todos los contenidos de este sitio web (textos, imágenes, logotipos, diseño, código fuente, etc.) son propiedad de El Recolector o de terceros que han autorizado su uso. Queda prohibida la reproducción, distribución, comunicación pública o transformación de dichos contenidos sin autorización expresa del titular.
+              Todos los contenidos de este sitio web (textos, imágenes, logotipos, diseño, código fuente, etc.) son propiedad de ELRECOLECTOR.ES o de terceros que han autorizado su uso. Queda prohibida la reproducción, distribución, comunicación pública o transformación de dichos contenidos sin autorización expresa del titular.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-slate-900">4. Responsabilidad</h2>
             <p className="mt-4 text-slate-600">
-              El Recolector no se hace responsable de los daños o perjuicios que pudieran derivarse de la utilización de la información contenida en este sitio web, ni de la falta de disponibilidad o accesibilidad del mismo. Tampoco se responsabiliza del contenido de enlaces externos que puedan aparecer.
+              ELRECOLECTOR.ES no se hace responsable de los daños o perjuicios que pudieran derivarse de la utilización de la información contenida en este sitio web, ni de la falta de disponibilidad o accesibilidad del mismo. Tampoco se responsabiliza del contenido de enlaces externos que puedan aparecer.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-slate-900">5. Legislación aplicable y jurisdicción</h2>
             <p className="mt-4 text-slate-600">
-              El presente Aviso Legal se rige por la legislación española. Para la resolución de cualquier controversia que pudiera derivarse del acceso o uso de este sitio web, el usuario y El Recolector se someten a los juzgados y tribunales de Barcelona, con renuncia expresa a cualquier otro fuero que pudiera corresponderles.
+              El presente Aviso Legal se rige por la legislación española. Para la resolución de cualquier controversia que pudiera derivarse del acceso o uso de este sitio web, el usuario y ELRECOLECTOR.ES se someten a los juzgados y tribunales de Barcelona, con renuncia expresa a cualquier otro fuero que pudiera corresponderles.
             </p>
           </section>
         </div>

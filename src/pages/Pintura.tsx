@@ -2,13 +2,19 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, CheckCircle, Paintbrush, Palette, Brush, ArrowRight } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
+import ServiceSchema from '../components/ServiceSchema';
 
 export default function Pintura() {
   return (
     <div className="bg-white">
       <LocalBusinessSchema />
+      <ServiceSchema
+        name="Pintura Profesional"
+        description="Pintores profesionales en Barcelona y toda Cataluña. Pintura de interiores, exteriores, baños y cocinas. Presupuesto gratis."
+        url="https://elrecolector.es/pintura"
+      />
       <Helmet>
-        <title>Pintores Económicos Barcelona | Interiores y Exteriores | El Recolector</title>
+        <title>Pintores Económicos Barcelona | Interiores y Exteriores | ELRECOLECTOR.ES</title>
         <meta name="description" content="Pintores profesionales en Barcelona y toda Cataluña. Pintura de interiores, exteriores, baños y cocinas. Presupuesto gratis y acabados de calidad." />
         <link rel="canonical" href="https://elrecolector.es/pintura" />
       </Helmet>

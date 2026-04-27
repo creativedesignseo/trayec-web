@@ -30,7 +30,7 @@ export default function Footer() {
           {/* Logo + descripción */}
           <div>
             <Link to="/" className="inline-block">
-              <img src="/logo.svg" alt="El Recolector" className="h-14 w-auto" />
+              <img src="/logo.svg" alt="ELRECOLECTOR.ES" className="h-14 w-auto" />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en toda Cataluña.
@@ -105,7 +105,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 sm:flex-row">
           <p className="text-xs text-slate-500">
-            Copyright © {new Date().getFullYear()} El Recolector . Reservados todos los derechos
+            Copyright © {new Date().getFullYear()} elrecolector.es
           </p>
           <div className="flex gap-4">
             <a href="https://wa.me/34694266258" target="_blank" rel="noreferrer" className="rounded-full bg-[#25D366] px-4 py-2 text-xs font-semibold text-white hover:opacity-90 transition">

@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, CheckCircle, Sparkles, Hammer, Paintbrush, Ruler, Zap, ArrowRight } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
+import ServiceSchema from '../components/ServiceSchema';
 
 const serviciosReforma = [
   { icon: Hammer, title: 'Reformas de baño', desc: 'Cambio de sanitarios, plato de ducha, alicatado e instalaciones.' },
@@ -15,8 +16,13 @@ export default function Reformas() {
   return (
     <div className="bg-white">
       <LocalBusinessSchema />
+      <ServiceSchema
+        name="Reformas Integrales"
+        description="Reformas integrales de baños, cocinas y viviendas completas en Barcelona y toda Cataluña. Presupuesto detallado sin coste."
+        url="https://elrecolector.es/reformas"
+      />
       <Helmet>
-        <title>Reformas Integrales Barcelona | Baños y Cocinas | El Recolector</title>
+        <title>Reformas Integrales Barcelona | Baños y Cocinas | ELRECOLECTOR.ES</title>
         <meta name="description" content="Reformas integrales de baños, cocinas y viviendas completas en Barcelona y toda Cataluña. Presupuesto detallado sin coste y ejecución en plazos ajustados." />
         <link rel="canonical" href="https://elrecolector.es/reformas" />
       </Helmet>

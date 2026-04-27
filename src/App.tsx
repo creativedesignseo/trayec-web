@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Contacto from './pages/Contacto';
@@ -37,6 +38,7 @@ function App() {
       </main>
       <Footer />
       <CookieBanner />
+      <FloatingWhatsApp />
     </div>
   );
 }

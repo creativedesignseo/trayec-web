@@ -1,1 +1,7 @@
-/*    /index.html   200
+/robots.txt    /robots.txt   200
+/sitemap.xml   /sitemap.xml  200
+/favicon.png   /favicon.png  200
+/logo.svg      /logo.svg     200
+/icons.svg     /icons.svg    200
+/assets/*      /assets/:splat 200
+/*             /index.html   200

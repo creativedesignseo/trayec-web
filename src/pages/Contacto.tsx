@@ -8,8 +8,8 @@ export default function Contacto() {
     <div className="bg-white pt-24 lg:pt-28">
       <LocalBusinessSchema />
       <Helmet>
-        <title>Contacto | El Recolector | Vaciado de Pisos Barcelona</title>
-        <meta name="description" content="Contacta con El Recolector. Teléfono 694 266 258. Servicio de vaciado de pisos, recogida de muebles y reformas en Barcelona y toda Cataluña. Disponible 24h." />
+        <title>Contacto | ELRECOLECTOR.ES | Vaciado de Pisos Barcelona</title>
+        <meta name="description" content="Contacta con ELRECOLECTOR.ES. Teléfono 694 266 258. Servicio de vaciado de pisos, recogida de muebles y reformas en Barcelona y toda Cataluña. Disponible 24h." />
         <link rel="canonical" href="https://elrecolector.es/contacto" />
       </Helmet>
 
@@ -18,7 +18,7 @@ export default function Contacto() {
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Contacto</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
-            Estamos disponibles las 24 horas. Llámanos o envíanos un mensaje y te respondemos en menos de 1 hora.
+            Estamos disponibles las 24 horas. Llámanos o envíanos un mensaje y contestaremos en menos de 10 minutos.
           </p>
         </div>
       </div>

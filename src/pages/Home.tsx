@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
+import FAQSchema from '../components/FAQSchema';
 import { Truck, Paintbrush, Home as HomeIcon, Sparkles, Clock, Shield, MapPin, Phone, ChevronDown, Star, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -47,7 +48,7 @@ const pasos = [
   {
     step: '01',
     title: 'Contacta',
-    description: 'Llámanos o envía el formulario. Te respondemos en menos de 1 hora.',
+    description: 'Llámanos o envía el formulario. Contestaremos en menos de 10 minutos.',
   },
   {
     step: '02',
@@ -68,7 +69,7 @@ const faqs = [
   },
   {
     question: '¿Cuánto tardáis en responder?',
-    answer: 'Garantizamos una respuesta en menos de 1 hora durante todo el día, incluso fines de semana.',
+    answer: 'Contestaremos en menos de 10 minutos durante todo el día, incluso fines de semana.',
   },
   {
     question: '¿Cubrís toda Cataluña?',
@@ -86,9 +87,10 @@ export default function Home() {
   return (
     <div className="bg-white">
       <LocalBusinessSchema />
+      <FAQSchema faqs={faqs} />
       <Helmet>
-        <title>El Recolector | Vaciado de Pisos y Recogida de Muebles en Cataluña</title>
-        <meta name="description" content="Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en Barcelona y toda Cataluña. Presupuesto gratis y respuesta en menos de 1h." />
+        <title>ELRECOLECTOR.ES | Vaciado de Pisos y Recogida de Muebles en Cataluña</title>
+        <meta name="description" content="Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en Barcelona y toda Cataluña. Presupuesto gratis y respuesta en menos de 10 min." />
         <link rel="canonical" href="https://elrecolector.es/" />
       </Helmet>
 
@@ -97,7 +99,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80"
-            alt="Camión de mudanzas El Recolector en Barcelona"
+            alt="Camión de mudanzas ELRECOLECTOR.ES en Barcelona"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />
@@ -114,10 +116,10 @@ export default function Home() {
                 Disponible 24h en toda Cataluña
               </div>
               <h1 className="mt-6 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
-                Vaciado de pisos <span className="text-green-400">urgente</span>
+                VACIADO DE PISOS <span className="text-green-400">urgente</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
-                Servicio rápido, limpio y profesional. Presupuesto sin coste y respuesta en menos de 1 hora. El Recolector, tu empresa de confianza en Barcelona y toda Cataluña.
+                Servicio rápido, limpio y profesional. Presupuesto sin coste y contestaremos en menos de 10 minutos. ELRECOLECTOR.ES, tu empresa de confianza en Barcelona y toda Cataluña.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a href="tel:694266258" className="btn-cta inline-flex items-center justify-center gap-2">
@@ -139,7 +141,7 @@ export default function Home() {
                   <p className="text-sm text-slate-400">Servicios realizados</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-white">&lt;1h</p>
+                  <p className="text-3xl font-bold text-white">10m</p>
                   <p className="text-sm text-slate-400">Tiempo de respuesta</p>
                 </div>
               </div>
@@ -167,7 +169,7 @@ export default function Home() {
           <div className="relative overflow-hidden pb-8 pr-8">
             <img
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
-              alt="Equipo El Recolector trabajando"
+              alt="Equipo ELRECOLECTOR.ES trabajando"
               loading="lazy"
               className="rounded-3xl shadow-2xl"
             />
@@ -181,10 +183,10 @@ export default function Home() {
               Tu equipo de confianza para vaciados y recogidas de muebles
             </h2>
             <p className="mt-4 text-lg text-slate-600">
-              En El Recolector combinamos rapidez, profesionalidad y respeto por el medio ambiente. Reciclamos todo lo que podemos y garantizamos un servicio limpio de principio a fin.
+              En ELRECOLECTOR.ES combinamos rapidez, profesionalidad y respeto por el medio ambiente. Reciclamos todo lo que podemos y garantizamos un servicio limpio de principio a fin.
             </p>
             <ul className="mt-6 space-y-3">
-              {['Presupuesto sin coste', 'Respuesta en menos de 1 hora', 'Reciclaje responsable', 'Cobertura total Cataluña'].map((item) => (
+              {['Presupuesto sin coste', 'Contestaremos en menos de 10 minutos', 'Reciclaje responsable', 'Cobertura total Cataluña'].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-slate-700">
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 text-green-600">
                     <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
@@ -277,19 +279,19 @@ export default function Home() {
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <h2 className="section-title">¿Por qué elegir El Recolector?</h2>
+            <h2 className="section-title">¿Por qué elegir ELRECOLECTOR.ES?</h2>
             <p className="mt-4 text-lg text-slate-600">
               Nos diferenciamos por la rapidez, la transparencia y el trato cercano. Tu tiempo y tranquilidad son lo primero.
             </p>
             <div className="mt-8 space-y-6">
               {[
-                { icon: Clock, title: 'Respuesta en menos de 1h', desc: 'Sabemos que muchos casos son urgentes. Por eso garantizamos contacto rápido.' },
+                { icon: Clock, title: 'Contestaremos en menos de 10 min', desc: 'Sabemos que muchos casos son urgentes. Por eso garantizamos contacto rápido.' },
                 { icon: Shield, title: 'Presupuesto sin coste', desc: 'Evaluamos tu caso sin compromiso. Precio claro desde el primer momento.' },
                 { icon: MapPin, title: 'Toda Cataluña', desc: 'Desde Barcelona capital hasta el pueblo más pequeño de Girona o Lleida.' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-green-100 text-green-600">
-                    <item.icon className="h-6 w-6" />
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center text-green-600">
+                    <item.icon className="h-7 w-7" strokeWidth={2.5} />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">{item.title}</h3>
@@ -302,7 +304,7 @@ export default function Home() {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
-              alt="Profesionalidad El Recolector"
+              alt="Profesionalidad ELRECOLECTOR.ES"
               loading="lazy"
               className="rounded-3xl shadow-2xl"
             />

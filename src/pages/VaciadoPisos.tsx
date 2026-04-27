@@ -2,10 +2,11 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, MapPin, Clock, Shield, CheckCircle, Truck, Home as HomeIcon } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
+import ServiceSchema from '../components/ServiceSchema';
 
 const beneficios = [
   'Presupuesto sin coste y sin compromiso',
-  'Respuesta en menos de 1 hora garantizada',
+  'Contestaremos en menos de 10 minutos',
   'Reciclaje responsable de todos los enseres',
   'Limpieza posterior incluida',
   'Servicio disponible 24h y fines de semana',
@@ -20,9 +21,14 @@ export default function VaciadoPisos() {
   return (
     <div className="bg-white">
       <LocalBusinessSchema />
+      <ServiceSchema
+        name="Vaciado de Pisos"
+        description="Servicio profesional de vaciado de pisos, locales, naves y trasteros en Barcelona y toda Cataluña. Presupuesto gratis y contestaremos en menos de 10 minutos."
+        url="https://elrecolector.es/vaciado-pisos"
+      />
       <Helmet>
-        <title>Vaciado de Pisos Barcelona y Cataluña | El Recolector</title>
-        <meta name="description" content="Servicio profesional de vaciado de pisos, locales, naves y trasteros en Barcelona y toda Cataluña. Presupuesto gratis y respuesta en menos de 1 hora." />
+        <title>Vaciado de Pisos Barcelona y Cataluña | ELRECOLECTOR.ES</title>
+        <meta name="description" content="Servicio profesional de vaciado de pisos, locales, naves y trasteros en Barcelona y toda Cataluña. Presupuesto gratis y contestaremos en menos de 10 minutos." />
         <link rel="canonical" href="https://elrecolector.es/vaciado-pisos" />
       </Helmet>
 
@@ -50,7 +56,7 @@ export default function VaciadoPisos() {
                 Vaciado de pisos <span className="text-green-400">Barcelona y Cataluña</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-300 sm:text-xl">
-                Servicio profesional de vaciado de pisos, locales, naves y trasteros. Rápido, limpio y con presupuesto gratis. Te llamamos en menos de 1 hora.
+                Servicio profesional de vaciado de pisos, locales, naves y trasteros. Rápido, limpio y con presupuesto gratis. Te llamamos en menos de 10 minutos.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a href="tel:694266258" className="btn-cta inline-flex items-center justify-center gap-2">
@@ -75,7 +81,7 @@ export default function VaciadoPisos() {
           <div>
             <h2 className="section-title">¿Por qué contratar nuestro vaciado de pisos?</h2>
             <p className="mt-4 text-lg text-slate-600">
-              En El Recolector nos encargamos de todo: desde la retirada de muebles hasta la limpieza final. Nos adaptamos a tu horario y gestionamos el reciclaje de todo lo recuperable.
+              En ELRECOLECTOR.ES nos encargamos de todo: desde la retirada de muebles hasta la limpieza final. Nos adaptamos a tu horario y gestionamos el reciclaje de todo lo recuperable.
             </p>
             <ul className="mt-8 space-y-4">
               {beneficios.map((b) => (
@@ -86,15 +92,15 @@ export default function VaciadoPisos() {
               ))}
             </ul>
           </div>
-          <div className="relative overflow-hidden">
+          <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
               alt="Equipo de vaciado profesional"
               loading="lazy"
               className="rounded-3xl shadow-2xl"
             />
-            <div className="absolute -bottom-6 -right-6 rounded-2xl bg-green-600 p-6 text-white shadow-xl sm:-right-10">
-              <p className="text-4xl font-black">&lt;1h</p>
+            <div className="absolute -bottom-6 -right-6 z-10 rounded-2xl bg-green-600 p-6 text-white shadow-xl sm:-right-10">
+              <p className="text-4xl font-black">10m</p>
               <p className="text-sm font-medium opacity-90">Respuesta</p>
             </div>
           </div>

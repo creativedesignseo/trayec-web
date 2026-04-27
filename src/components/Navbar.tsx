@@ -79,7 +79,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-3 py-4 lg:py-5 lg:px-6">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
-            <img src="/logo.svg" alt="El Recolector" className="h-14 w-auto" />
+            <img src="/logo.svg" alt="ELRECOLECTOR.ES" className="h-14 w-auto" />
           </Link>
         </div>
 
@@ -189,7 +189,7 @@ export default function Navbar() {
           <div className="fixed inset-0 bg-black/40" onClick={() => setMobileMenuOpen(false)} />
           <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-white px-6 py-6 shadow-xl">
             <div className="flex items-center justify-between">
-              <img src="/logo.svg" alt="El Recolector" className="h-16 w-auto" />
+              <img src="/logo.svg" alt="ELRECOLECTOR.ES" className="h-16 w-auto" />
               <button
                 type="button"
                 aria-label="Cerrar menú"

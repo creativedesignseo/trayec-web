@@ -2,13 +2,14 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, CheckCircle, Truck } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
+import ServiceSchema from '../components/ServiceSchema';
 
 const beneficios = [
   'Evaluación gratuita del estado de los muebles',
   'Recogida gratuita si son recuperables',
   'Retirada de electrodomésticos y enseres',
   'Gestión responsable y reciclaje certificado',
-  'Respuesta en menos de 1 hora',
+  'Contestaremos en menos de 10 minutos',
   'Servicio en toda Cataluña',
 ];
 
@@ -16,8 +17,13 @@ export default function RecogidaMuebles() {
   return (
     <div className="bg-white">
       <LocalBusinessSchema />
+      <ServiceSchema
+        name="Recogida de Muebles"
+        description="Recogida de muebles, electrodomésticos y enseres en Barcelona y toda Cataluña. Si están en buen estado, la retirada puede ser gratuita."
+        url="https://elrecolector.es/recogida-muebles"
+      />
       <Helmet>
-        <title>Recogida de Muebles Gratis Barcelona | El Recolector</title>
+        <title>Recogida de Muebles Gratis Barcelona | ELRECOLECTOR.ES</title>
         <meta name="description" content="Recogida de muebles, electrodomésticos y enseres en Barcelona y toda Cataluña. Si están en buen estado, la retirada puede ser gratuita. Presupuesto sin coste." />
         <link rel="canonical" href="https://elrecolector.es/recogida-muebles" />
       </Helmet>
@@ -113,7 +119,7 @@ export default function RecogidaMuebles() {
           ¿Tienes muebles para recoger?
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90">
-          Presupuesto gratis en menos de 1 hora. Servicio en toda Cataluña.
+          Presupuesto gratis en menos de 10 minutos. Servicio en toda Cataluña.
         </p>
         <a href="tel:694266258" className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-bold text-green-700 shadow-lg transition hover:bg-gray-100">
           <Phone className="h-5 w-5" />

@@ -4,8 +4,8 @@ export default function PoliticaCookies() {
   return (
     <div className="bg-white pt-24 lg:pt-28">
       <Helmet>
-        <title>Política de Cookies | El Recolector</title>
-        <meta name="description" content="Política de cookies de El Recolector. Información sobre las cookies que utilizamos y cómo gestionarlas." />
+        <title>Política de Cookies | ELRECOLECTOR.ES</title>
+        <meta name="description" content="Política de cookies de ELRECOLECTOR.ES. Información sobre las cookies que utilizamos y cómo gestionarlas." />
         <link rel="canonical" href="https://elrecolector.es/politica-cookies" />
       </Helmet>
 
@@ -82,7 +82,7 @@ export default function PoliticaCookies() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900">5. Modificaciones</h2>
             <p className="mt-4 text-slate-600">
-              El Recolector se reserva el derecho a modificar la presente Política de Cookies para adaptarla a cambios normativos o técnicos. Cualquier actualización será publicada en esta página.
+              ELRECOLECTOR.ES se reserva el derecho a modificar la presente Política de Cookies para adaptarla a cambios normativos o técnicos. Cualquier actualización será publicada en esta página.
             </p>
           </section>
         </div>

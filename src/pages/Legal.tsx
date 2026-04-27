@@ -5,8 +5,8 @@ export default function Legal() {
   return (
     <div className="bg-white pt-24 lg:pt-28">
       <Helmet>
-        <title>Aviso Legal y Política de Privacidad | El Recolector</title>
-        <meta name="description" content="Información legal de El Recolector. Aviso legal, política de privacidad y política de cookies. CIF B56321581. Calle Saragossa 53, Barcelona." />
+        <title>Aviso Legal y Política de Privacidad | ELRECOLECTOR.ES</title>
+        <meta name="description" content="Información legal de ELRECOLECTOR.ES. Aviso legal, política de privacidad y política de cookies. CIF B56321581. Calle Saragossa 53, Barcelona." />
         <link rel="canonical" href="https://elrecolector.es/legal" />
       </Helmet>
 
@@ -27,7 +27,7 @@ export default function Legal() {
             En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se informa que el titular de esta web es:
           </p>
           <ul className="mt-4 space-y-2 text-slate-600">
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>Razón social:</strong> El Recolector</li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>Razón social:</strong> VACIADO DE PISOS ELRECOLECTOR.ES</li>
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>CIF:</strong> B56321581</li>
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-green-600" /> <strong>Dirección:</strong> Calle Saragossa 53, 3-1, Barcelona</li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-green-600" /> <strong>Teléfono:</strong> 694 266 258</li>
@@ -36,7 +36,7 @@ export default function Legal() {
 
           <h2 className="mt-10 text-2xl font-bold text-slate-900">Política de Privacidad</h2>
           <p className="mt-4 text-slate-600">
-            El Recolector se compromete a proteger la información personal de los usuarios. Los datos recogidos a través del formulario de contacto serán utilizados exclusivamente para gestionar su solicitud y nunca serán cedidos a terceros sin su consentimiento.
+            ELRECOLECTOR.ES se compromete a proteger la información personal de los usuarios. Los datos recogidos a través del formulario de contacto serán utilizados exclusivamente para gestionar su solicitud y nunca serán cedidos a terceros sin su consentimiento.
           </p>
           <p className="mt-4 text-slate-600">
             Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición contactando con nosotros a través del email info@elrecolector.es.

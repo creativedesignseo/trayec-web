@@ -7,8 +7,8 @@ export default function SobreNosotros() {
     <div className="bg-white pt-24 lg:pt-28">
       <LocalBusinessSchema />
       <Helmet>
-        <title>Sobre Nosotros | El Recolector | Vaciados y Reformas Cataluña</title>
-        <meta name="description" content="Conoce El Recolector. Empresa profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en Barcelona y toda Cataluña." />
+        <title>Sobre Nosotros | ELRECOLECTOR.ES | Vaciados y Reformas Cataluña</title>
+        <meta name="description" content="Conoce ELRECOLECTOR.ES. Empresa profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en Barcelona y toda Cataluña." />
         <link rel="canonical" href="https://elrecolector.es/sobre-nosotros" />
       </Helmet>
 
@@ -17,7 +17,7 @@ export default function SobreNosotros() {
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Sobre Nosotros</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
-            El Recolector — Tu empresa de confianza para vaciados, recogidas y reformas en Cataluña.
+            ELRECOLECTOR.ES — Tu empresa de confianza para vaciados, recogidas y reformas en Cataluña.
           </p>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function SobreNosotros() {
           <div>
             <h2 className="section-title">Profesionales del vaciado y la reforma</h2>
             <p className="mt-4 text-lg text-slate-600">
-              En El Recolector llevamos más de un año ofreciendo servicios profesionales de vaciado de pisos, recogida de muebles, reformas integrales, limpieza y pintura en toda Cataluña.
+              En ELRECOLECTOR.ES llevamos más de un año ofreciendo servicios profesionales de vaciado de pisos, recogida de muebles, reformas integrales, limpieza y pintura en toda Cataluña.
             </p>
             <p className="mt-4 text-lg text-slate-600">
               Nuestro objetivo es simple: hacer que cada cliente quede satisfecho con un servicio rápido, limpio y transparente. Nos encargamos de todo, desde el primer contacto hasta la limpieza final.
@@ -36,7 +36,7 @@ export default function SobreNosotros() {
               {[
                 { label: 'Disponibilidad', value: '24h' },
                 { label: 'Cobertura', value: 'Toda Cataluña' },
-                { label: 'Respuesta', value: '<1h' },
+                { label: 'Respuesta', value: '10m' },
                 { label: 'Presupuesto', value: 'Gratis' },
               ].map((stat) => (
                 <div key={stat.label} className="rounded-2xl bg-green-50 p-4">
