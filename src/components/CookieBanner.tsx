@@ -1,19 +1,30 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
+import { updateConsent } from '../lib/dataLayer';
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const consent = localStorage.getItem('cookie_consent');
-    if (!consent) {
-      setVisible(true);
+    if (consent === 'true') {
+      updateConsent(true);
+      return;
     }
+
+    setVisible(true);
   }, []);
 
   const handleAccept = () => {
     localStorage.setItem('cookie_consent', 'true');
+    updateConsent(true);
+    setVisible(false);
+  };
+
+  const handleClose = () => {
+    localStorage.setItem('cookie_consent', 'false');
+    updateConsent(false);
     setVisible(false);
   };
 
@@ -25,7 +36,7 @@ export default function CookieBanner() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex-1 pr-4">
             <p className="text-sm text-slate-300">
-              Este sitio web utiliza <strong>cookies técnicas necesarias</strong> para su correcto funcionamiento.{' '}
+              Este sitio web utiliza cookies técnicas necesarias y, si aceptas, cookies de medición para mejorar campañas y servicios.{' '}
               <Link to="/politica-cookies" className="underline hover:text-green-400 transition">
                 Más información
               </Link>
@@ -36,10 +47,10 @@ export default function CookieBanner() {
               onClick={handleAccept}
               className="rounded-full bg-green-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-green-500 transition"
             >
-              Aceptar
+              Aceptar medición
             </button>
             <button
-              onClick={handleAccept}
+              onClick={handleClose}
               aria-label="Cerrar aviso de cookies"
               className="rounded-full p-2 text-slate-400 hover:text-white hover:bg-slate-700 transition"
             >

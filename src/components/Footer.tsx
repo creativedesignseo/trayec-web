@@ -85,7 +85,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-2 text-sm text-slate-400">
                 <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
-                <a href="tel:694266258" className="hover:text-green-400">694 266 258</a>
+                <a href="tel:+34694266258" className="hover:text-green-400">+34 694 26 62 58</a>
               </li>
               <li className="flex items-start gap-2 text-sm text-slate-400">
                 <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
@@ -111,7 +111,7 @@ export default function Footer() {
             <a href="https://wa.me/34694266258" target="_blank" rel="noreferrer" className="rounded-full bg-[#25D366] px-4 py-2 text-xs font-semibold text-white hover:opacity-90 transition">
               WhatsApp
             </a>
-            <a href="tel:694266258" className="rounded-full bg-green-600 px-4 py-2 text-xs font-semibold text-white hover:bg-green-500 transition">
+            <a href="tel:+34694266258" className="rounded-full bg-green-600 px-4 py-2 text-xs font-semibold text-white hover:bg-green-500 transition">
               Llamar
             </a>
           </div>

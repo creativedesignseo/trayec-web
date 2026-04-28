@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Send, CheckCircle, Phone, User, MapPin, MessageSquare, Mail, Home, RotateCcw } from 'lucide-react';
+import { pushDataLayer } from '../lib/dataLayer';
 
 interface LeadFormProps {
   servicio?: string;
@@ -25,6 +26,15 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
     const ciudad = String(data.get('ciudad') || '').trim();
     const mensaje = String(data.get('mensaje') || '').trim();
     const servicioValor = String(data.get('servicio') || 'General');
+
+    pushDataLayer({
+      event: 'lead_form_submit',
+      form_name: 'presupuesto_whatsapp',
+      service: servicioValor,
+      conversion_type: 'lead_form',
+      has_email: Boolean(email),
+      has_message: Boolean(mensaje),
+    });
 
     const text = [
       `Hola soy de ELRECOLECTOR.ES pasame fotos y ubicación y te doy precio ahora mismo. Si encaja podemos hacerlo hoy.`,
