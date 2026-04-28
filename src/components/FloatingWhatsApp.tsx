@@ -1,6 +1,16 @@
+import { pushDataLayer } from '../lib/dataLayer';
+
 export default function FloatingWhatsApp() {
   const phone = '34694266258';
   const message = encodeURIComponent('Hola soy de ELRECOLECTOR.ES pasame fotos y ubicación y te doy precio ahora mismo. Si encaja podemos hacerlo hoy.');
+
+  const handleClick = () => {
+    pushDataLayer({
+      event: 'whatsapp_click',
+      click_location: 'floating_button',
+      conversion_type: 'lead_contact',
+    });
+  };
 
   return (
     <a
@@ -8,6 +18,7 @@ export default function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
+      onClick={handleClick}
       className="fixed bottom-5 right-5 z-[100] flex items-center gap-2.5 rounded-full bg-[#25D366] px-4 py-3.5 text-white shadow-xl shadow-black/20 transition-transform duration-200 hover:scale-105 active:scale-95 sm:bottom-6 sm:right-6"
     >
       {/* Anillo de pulso */}
