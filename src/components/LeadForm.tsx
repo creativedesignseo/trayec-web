@@ -34,6 +34,7 @@ export default function LeadForm({ servicio = 'General', title = 'Solicita tu pr
       conversion_type: 'lead_form',
       has_email: Boolean(email),
       has_message: Boolean(mensaje),
+      page_path: window.location.pathname,
     });
 
     const text = [

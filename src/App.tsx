@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -17,8 +18,32 @@ import SobreNosotros from './pages/SobreNosotros';
 import AvisoLegal from './pages/AvisoLegal';
 import PoliticaPrivacidad from './pages/PoliticaPrivacidad';
 import PoliticaCookies from './pages/PoliticaCookies';
+import { pushDataLayer } from './lib/dataLayer';
 
 function App() {
+  useEffect(() => {
+    const handleClick = (event: MouseEvent) => {
+      const target = event.target;
+      if (!(target instanceof Element)) {
+        return;
+      }
+
+      const link = target.closest('a[href*="wa.me/"]');
+      if (!link) {
+        return;
+      }
+
+      pushDataLayer({
+        event: 'whatsapp_click',
+        click_source: link.getAttribute('aria-label') || link.textContent?.trim() || 'whatsapp_link',
+        page_path: window.location.pathname,
+      });
+    };
+
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col">
       <GoogleTagManager />
