@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import ScrollToTop from './components/ScrollToTop';
+import PageViewTracker from './components/PageViewTracker';
 import Home from './pages/Home';
 import Contacto from './pages/Contacto';
 import VaciadoPisos from './pages/VaciadoPisos';
@@ -19,6 +20,7 @@ import PoliticaCookies from './pages/PoliticaCookies';
 function App() {
   return (
     <div className="flex min-h-screen flex-col">
+      <PageViewTracker />
       <ScrollToTop />
       <Navbar />
       <main className="flex-1">
