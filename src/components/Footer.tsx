@@ -30,7 +30,7 @@ export default function Footer() {
           {/* Logo + descripción */}
           <div>
             <Link to="/" className="inline-block">
-              <img src="/logo.svg" alt="EL RECOLECTOR.ES" className="h-14 w-auto" />
+              <img src="/logo-blanco.svg" alt="EL RECOLECTOR.ES" className="h-14 w-auto" />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Servicio profesional de vaciado de pisos, recogida de muebles, reformas, limpieza y pintura en toda Cataluña.
